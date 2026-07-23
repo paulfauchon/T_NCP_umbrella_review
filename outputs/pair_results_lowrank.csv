@@ -1,0 +1,475 @@
+"ts_id","trait_grouped","ncp","prob_positive"
+1,"aboveground biomass","formation and protection of soils",0.636875
+2,"aboveground biomass","habitat creation and maintenance",0.46325
+3,"aboveground biomass","materials and assistance",0.759
+4,"aboveground biomass","regulation of climate",0.631875
+5,"aboveground biomass","regulation of freshwater quality",0.509625
+6,"aboveground biomass","regulation of freshwater quantity",0.172875
+7,"aboveground biomass","regulation of hazards and extreme events",0.253125
+8,"aboveground litter","formation and protection of soils",0.49
+9,"aboveground litter","habitat creation and maintenance",0.49425
+10,"aboveground litter","regulation of climate",0.38925
+11,"aboveground litter","regulation of freshwater quantity",0.4415
+12,"age","habitat creation and maintenance",0.220125
+13,"bark thickness","food and feed",0.73625
+14,"bark thickness","formation and protection of soils",0.33
+15,"bark thickness","habitat creation and maintenance",0.684625
+16,"bark thickness","materials and assistance",0.383625
+17,"bark thickness","medicinal and genetic ressources",0.500625
+18,"bark thickness","regulation of freshwater quantity",0.769875
+19,"bark thickness","regulation of hazards and extreme events",0.724375
+20,"belowground biomass","formation and protection of soils",0.61675
+21,"belowground biomass","regulation of climate",0.69225
+22,"belowground biomass","regulation of freshwater quality",0.670875
+23,"belowground biomass","regulation of hazards and extreme events",0.6735
+24,"bract size","pollination and seed dispersal",0.545125
+25,"branch angle","habitat creation and maintenance",0.52125
+26,"branching height","food and feed",0.035
+27,"branching height","habitat creation and maintenance",0.2865
+28,"branching height","materials and assistance",0.73075
+29,"branching height","regulation of climate",0.63625
+30,"branching height","regulation of freshwater quality",0.490375
+31,"branching height","regulation of hazards and extreme events",0.1495
+32,"branching intensity","formation and protection of soils",0.56525
+33,"branching intensity","habitat creation and maintenance",0.63175
+34,"branching intensity","regulation of air quality",0.62275
+35,"branching intensity","regulation of hazards and extreme events",0.607875
+36,"calyx width","pollination and seed dispersal",0.556375
+37,"corolla depth","pollination and seed dispersal",0.533375
+38,"crown size","experiences",0.194
+39,"crown size","formation and protection of soils",0.826
+40,"crown size","regulation of air quality",0.880375
+41,"crown size","regulation of climate",0.778375
+42,"crown size","regulation of detrimental organisms",0.5065
+43,"crown size","regulation of freshwater quantity",0.06475
+44,"crown size","regulation of hazards and extreme events",0.133875
+45,"diameter at breast height","food and feed",0.071875
+46,"diameter at breast height","formation and protection of soils",0.74
+47,"diameter at breast height","regulation of air quality",0.84375
+48,"diameter at breast height","regulation of climate",0.781625
+49,"diameter at breast height","regulation of detrimental organisms",0.509625
+50,"diameter at breast height","regulation of freshwater quantity",0.0915
+51,"diameter at breast height","regulation of hazards and extreme events",0.319625
+52,"edible product quality","experiences",0.568
+53,"fine root fraction","formation and protection of soils",0.765375
+54,"fine root fraction","materials and assistance",0.54975
+55,"fine root fraction","regulation of climate",0.622875
+56,"fine root fraction","regulation of freshwater quality",0.502
+57,"fine root fraction","regulation of freshwater quantity",0.168125
+58,"fine root fraction","regulation of hazards and extreme events",0.193125
+59,"floral display accessibility","habitat creation and maintenance",0.527625
+60,"floral display size","experiences",0.73625
+61,"floral display size","habitat creation and maintenance",0.702125
+62,"floral display size","pollination and seed dispersal",0.80325
+63,"floral display size","regulation of detrimental organisms",0.532875
+64,"floral odour","experiences",0.605875
+65,"floral odour","habitat creation and maintenance",0.606375
+66,"floral odour","pollination and seed dispersal",0.67625
+67,"floral symmetry","pollination and seed dispersal",0.552
+68,"floral symmetry","regulation of detrimental organisms",0.52725
+69,"floral tubes length","pollination and seed dispersal",0.54125
+70,"flower angle","pollination and seed dispersal",0.5455
+71,"flower attractiveness","habitat creation and maintenance",0.61025
+72,"flower colour","experiences",0.48025
+73,"flower colour","pollination and seed dispersal",0.336
+74,"flower height","habitat creation and maintenance",0.518625
+75,"flower number","food and feed",0.55975
+76,"flower number","pollination and seed dispersal",0.570625
+77,"flowering period duration","experiences",0.7405
+78,"flowering period duration","formation and protection of soils",0.372875
+79,"flowering period duration","habitat creation and maintenance",0.648875
+80,"flowering period duration","pollination and seed dispersal",0.745375
+81,"flowering period duration","regulation of climate",0.304
+82,"flowering time","experiences",0.31225
+83,"flowering time","food and feed",0.22175
+84,"flowering time","formation and protection of soils",0.369625
+85,"flowering time","pollination and seed dispersal",0.1755
+86,"flowering time","regulation of climate",0.351625
+87,"foliage density","experiences",0.620875
+88,"foliage density","food and feed",0.571
+89,"foliage density","formation and protection of soils",0.553
+90,"foliage density","habitat creation and maintenance",0.606125
+91,"foliage density","regulation of air quality",0.621375
+92,"foliage density","regulation of climate",0.4885
+93,"foliage density","regulation of freshwater quantity",0.434375
+94,"foliage density","regulation of hazards and extreme events",0.424875
+95,"fruit heavy metals content","food and feed",0.069125
+96,"growth rate","food and feed",0.514375
+97,"growth rate","formation and protection of soils",0.440625
+98,"growth rate","regulation of climate",0.415
+99,"growth rate","regulation of freshwater quality",0.4355
+100,"growth rate","regulation of hazards and extreme events",0.33275
+101,"heat generation","pollination and seed dispersal",0.587125
+102,"height to diameter ratio","experiences",0.49
+103,"height to diameter ratio","formation and protection of soils",0.345625
+104,"height to diameter ratio","regulation of hazards and extreme events",0.271875
+105,"height","experiences",0.057375
+106,"height","food and feed",0.0035
+107,"height","formation and protection of soils",0.731375
+108,"height","habitat creation and maintenance",0.2335
+109,"height","materials and assistance",0.824
+110,"height","pollination and seed dispersal",0.249375
+111,"height","regulation of air quality",0.745625
+112,"height","regulation of climate",0.873375
+113,"height","regulation of detrimental organisms",0.489875
+114,"height","regulation of freshwater quantity",0.035125
+115,"height","regulation of hazards and extreme events",0.111875
+116,"internode length","regulation of climate",0.471875
+117,"leaf 13C content","formation and protection of soils",0.581375
+118,"leaf angle","habitat creation and maintenance",0.535625
+119,"leaf angle","regulation of air quality",0.50575
+120,"leaf angle","regulation of climate",0.475625
+121,"leaf angle","regulation of hazards and extreme events",0.532
+122,"leaf area index","experiences",0.794125
+123,"leaf area index","food and feed",0.88925
+124,"leaf area index","formation and protection of soils",0.479375
+125,"leaf area index","habitat creation and maintenance",0.764875
+126,"leaf area index","regulation of climate",0.576125
+127,"leaf area index","regulation of freshwater quantity",0.8515
+128,"leaf area index","regulation of hazards and extreme events",0.826625
+129,"leaf area","food and feed",0.892125
+130,"leaf area","formation and protection of soils",0.31925
+131,"leaf area","materials and assistance",0.176
+132,"leaf area","regulation of air quality",0.071125
+133,"leaf area","regulation of climate",0.03975
+134,"leaf area","regulation of detrimental organisms",0.33475
+135,"leaf area","regulation of freshwater quality",0.323625
+136,"leaf area","regulation of freshwater quantity",0.88525
+137,"leaf area","regulation of hazards and extreme events",0.516625
+138,"leaf ash content","formation and protection of soils",0.51375
+139,"leaf bulk density","regulation of hazards and extreme events",0.633
+140,"leaf C:N ratio","formation and protection of soils",0.458625
+141,"leaf C:N ratio","materials and assistance",0.40475
+142,"leaf C:N ratio","regulation of climate",0.414125
+143,"leaf C:N ratio","regulation of detrimental organisms",0.629625
+144,"leaf C:N ratio","regulation of freshwater quantity",0.7395
+145,"leaf C:P ratio","formation and protection of soils",0.584625
+146,"leaf C:P ratio","regulation of detrimental organisms",0.603375
+147,"leaf calcium content","formation and protection of soils",0.520375
+148,"leaf calcium content","regulation of climate",0.41875
+149,"leaf calcium content","regulation of freshwater quantity",0.175375
+150,"leaf carbohydrates content","formation and protection of soils",0.498375
+151,"leaf carbon content","formation and protection of soils",0.745
+152,"leaf carbon content","materials and assistance",0.398
+153,"leaf carbon content","regulation of climate",0.723625
+154,"leaf carbon content","regulation of detrimental organisms",0.545
+155,"leaf carbon content","regulation of freshwater quantity",0.424125
+156,"leaf carbon content","regulation of hazards and extreme events",0.4515
+157,"leaf cellulose content","formation and protection of soils",0.40925
+158,"leaf cellulose content","regulation of climate",0.312125
+159,"leaf cellulose content","regulation of detrimental organisms",0.492375
+160,"leaf cellulose content","regulation of hazards and extreme events",0.376875
+161,"leaf chlorophyll content","formation and protection of soils",0.521625
+162,"leaf chlorophyll content","regulation of freshwater quantity",0.63525
+163,"leaf curvature","regulation of climate",0.37425
+164,"leaf curvature","regulation of hazards and extreme events",0.692375
+165,"leaf dry matter content","experiences",0.13925
+166,"leaf dry matter content","food and feed",0.011375
+167,"leaf dry matter content","formation and protection of soils",0.566875
+168,"leaf dry matter content","materials and assistance",0.79975
+169,"leaf dry matter content","regulation of climate",0.585
+170,"leaf dry matter content","regulation of detrimental organisms",0.427625
+171,"leaf dry matter content","regulation of freshwater quantity",0.109125
+172,"leaf dry matter content","regulation of hazards and extreme events",0.228875
+173,"leaf force to tear","formation and protection of soils",0.453
+174,"leaf force to tear","regulation of climate",0.306625
+175,"leaf gelsemine content","pollination and seed dispersal",0.231125
+176,"leaf length to width ratio","regulation of detrimental organisms",0.349375
+177,"leaf length to width ratio","regulation of hazards and extreme events",0.319
+178,"leaf length","regulation of freshwater quality",0.553
+179,"leaf length","regulation of hazards and extreme events",0.638125
+180,"leaf life span","formation and protection of soils",0.3575
+181,"leaf life span","regulation of air quality",0.44425
+182,"leaf life span","regulation of climate",0.324
+183,"leaf life span","regulation of detrimental organisms",0.491875
+184,"leaf lignin content","formation and protection of soils",0.604375
+185,"leaf lignin content","regulation of climate",0.675125
+186,"leaf lignin content","regulation of detrimental organisms",0.464875
+187,"leaf lignin content","regulation of hazards and extreme events",0.438
+188,"leaf lignin:nitrogen ratio","formation and protection of soils",0.495375
+189,"leaf litter carbon content","formation and protection of soils",0.502
+190,"leaf litter nitrogen content","formation and protection of soils",0.387375
+191,"leaf litter phosphorus content","formation and protection of soils",0.5025
+192,"leaf magnesium content","formation and protection of soils",0.531125
+193,"leaf magnesium content","regulation of climate",0.388375
+194,"leaf mass fraction","formation and protection of soils",0.569375
+195,"leaf N:P ratio","formation and protection of soils",0.16275
+196,"leaf N:P ratio","materials and assistance",0.179125
+197,"leaf N:P ratio","regulation of climate",0.062625
+198,"leaf N:P ratio","regulation of freshwater quantity",0.797375
+199,"leaf nitrogen content","experiences",0.437125
+200,"leaf nitrogen content","food and feed",0.632375
+201,"leaf nitrogen content","formation and protection of soils",0.39275
+202,"leaf nitrogen content","materials and assistance",0.33925
+203,"leaf nitrogen content","regulation of climate",0.145875
+204,"leaf nitrogen content","regulation of detrimental organisms",0.317375
+205,"leaf nitrogen content","regulation of freshwater quality",0.241375
+206,"leaf nitrogen content","regulation of freshwater quantity",0.543875
+207,"leaf nitrogen content","regulation of hazards and extreme events",0.2695
+208,"leaf non-polar extractables content","formation and protection of soils",0.50075
+209,"leaf number","regulation of freshwater quality",0.535875
+210,"leaf number","regulation of freshwater quantity",0.651
+211,"leaf number","regulation of hazards and extreme events",0.636375
+212,"leaf pH","formation and protection of soils",0.507625
+213,"leaf phenolics content","food and feed",0.51325
+214,"leaf phenolics content","regulation of climate",0.643
+215,"leaf phenolics content","regulation of detrimental organisms",0.571375
+216,"leaf phenolics content","regulation of hazards and extreme events",0.5105
+217,"leaf phenology","regulation of air quality",0.798
+218,"leaf phosphorus content","experiences",0.508625
+219,"leaf phosphorus content","food and feed",0.397875
+220,"leaf phosphorus content","formation and protection of soils",0.616625
+221,"leaf phosphorus content","materials and assistance",0.46825
+222,"leaf phosphorus content","pollination and seed dispersal",0.4115
+223,"leaf phosphorus content","regulation of climate",0.24875
+224,"leaf phosphorus content","regulation of detrimental organisms",0.434875
+225,"leaf phosphorus content","regulation of freshwater quantity",0.290125
+226,"leaf phosphorus content","regulation of hazards and extreme events",0.2045
+227,"leaf photosynthetic rate","formation and protection of soils",0.50625
+228,"leaf photosynthetic rate","materials and assistance",0.53625
+229,"leaf photosynthetic rate","regulation of detrimental organisms",0.386625
+230,"leaf photosynthetic rate","regulation of freshwater quantity",0.4295
+231,"leaf photosynthetic rate","regulation of hazards and extreme events",0.551875
+232,"leaf potassium content","formation and protection of soils",0.598125
+233,"leaf potassium content","regulation of climate",0.475
+234,"leaf potassium content","regulation of freshwater quantity",0.61025
+235,"leaf punch strength","regulation of detrimental organisms",0.555375
+236,"leaf roughness","formation and protection of soils",0.782625
+237,"leaf roughness","habitat creation and maintenance",0.60275
+238,"leaf roughness","regulation of air quality",0.96375
+239,"leaf roughness","regulation of detrimental organisms",0.38425
+240,"leaf roughness","regulation of freshwater quality",0.69375
+241,"leaf roughness","regulation of hazards and extreme events",0.577625
+242,"leaf sulphur content","formation and protection of soils",0.493375
+243,"leaf tannin content","regulation of climate",0.438625
+244,"leaf tannin content","regulation of detrimental organisms",0.438
+245,"leaf tannin content","regulation of hazards and extreme events",0.631
+246,"leaf tensile strength","experiences",0.3985
+247,"leaf tensile strength","food and feed",0.4285
+248,"leaf tensile strength","formation and protection of soils",0.41225
+249,"leaf thickness","formation and protection of soils",0.54675
+250,"leaf thickness","regulation of air quality",0.6865
+251,"leaf thickness","regulation of climate",0.671
+252,"leaf thickness","regulation of detrimental organisms",0.581
+253,"leaf thickness","regulation of freshwater quantity",0.398125
+254,"leaf thickness","regulation of hazards and extreme events",0.722625
+255,"leaf toughness","food and feed",0.3705
+256,"leaf toughness","formation and protection of soils",0.464875
+257,"leaf toughness","regulation of climate",0.5435
+258,"leaf toughness","regulation of detrimental organisms",0.6025
+259,"leaf water content","food and feed",0.507625
+260,"leaf water content","formation and protection of soils",0.511375
+261,"leaf water content","materials and assistance",0.509125
+262,"leaf water content","medicinal and genetic ressources",0.513
+263,"leaf water potential","regulation of hazards and extreme events",0.782625
+264,"leaf water-soluble extractables content","formation and protection of soils",0.50125
+265,"leaf wax","habitat creation and maintenance",0.625875
+266,"leaf wax","regulation of air quality",0.922875
+267,"leaf wax","regulation of detrimental organisms",0.345625
+268,"leaf wax","regulation of hazards and extreme events",0.6155
+269,"leaf width","formation and protection of soils",0.619
+270,"leaf width","habitat creation and maintenance",0.584
+271,"leaf width","regulation of climate",0.607375
+272,"leaf width","regulation of hazards and extreme events",0.363625
+273,"leaf/stem nitrogen uptake","regulation of freshwater quality",0.50825
+274,"leaf/stem phosphorus uptake","regulation of freshwater quality",0.509125
+275,"mycorrhizal colonization","formation and protection of soils",0.51575
+276,"mycorrhizal colonization","regulation of climate",0.5405
+277,"mycorrhizal colonization","regulation of freshwater quality",0.539375
+278,"nectar availability","pollination and seed dispersal",0.645875
+279,"nectar availability","regulation of detrimental organisms",0.533875
+280,"nectar quality","habitat creation and maintenance",0.672625
+281,"nectar quality","pollination and seed dispersal",0.571625
+282,"nectar quantity","habitat creation and maintenance",0.69925
+283,"nectar quantity","pollination and seed dispersal",0.774375
+284,"nectar quantity","regulation of detrimental organisms",0.4345
+285,"nectar viscosity","pollination and seed dispersal",0.496875
+286,"nitrogen fixing capacity","food and feed",0.81525
+287,"nitrogen fixing capacity","formation and protection of soils",0.52125
+288,"nitrogen fixing capacity","materials and assistance",0.37325
+289,"nitrogen fixing capacity","regulation of climate",0.4535
+290,"nutrient uptake rate","regulation of freshwater quality",0.558875
+291,"nutritional value","food and feed",0.745375
+292,"organoleptic profile","experiences",0.652875
+293,"organoleptic profile","food and feed",0.746125
+294,"petiole length","regulation of climate",0.651875
+295,"plant C:N ratio","food and feed",0.7455
+296,"plant C:N ratio","formation and protection of soils",0.471125
+297,"plant C:N ratio","pollination and seed dispersal",0.725875
+298,"plant C:N ratio","regulation of climate",0.599625
+299,"plant nitrogen content","formation and protection of soils",0.710875
+300,"plant nitrogen content","regulation of climate",0.714125
+301,"plant tensile strength","formation and protection of soils",0.563
+302,"plant width","food and feed",0.547125
+303,"pollen quality","pollination and seed dispersal",0.527625
+304,"pollen quantity","habitat creation and maintenance",0.76675
+305,"pollen quantity","pollination and seed dispersal",0.592375
+306,"pollen tubes","pollination and seed dispersal",0.632375
+307,"pollen viability","food and feed",0.580625
+308,"presence of domatia","habitat creation and maintenance",0.668375
+309,"resin gland size","pollination and seed dispersal",0.546875
+310,"root allocation","formation and protection of soils",0.453125
+311,"root allocation","regulation of climate",0.506875
+312,"root allocation","regulation of freshwater quantity",0.29925
+313,"root carbon content","formation and protection of soils",0.785875
+314,"root carbon content","regulation of climate",0.816125
+315,"root carbon content","regulation of hazards and extreme events",0.657875
+316,"root carbon:nitrogen ratio","formation and protection of soils",0.395625
+317,"root density","food and feed",0.51825
+318,"root density","formation and protection of soils",0.73675
+319,"root density","regulation of climate",0.747375
+320,"root density","regulation of freshwater quantity",0.406375
+321,"root density","regulation of hazards and extreme events",0.628375
+322,"root diameter","formation and protection of soils",0.4585
+323,"root diameter","regulation of climate",0.609625
+324,"root diameter","regulation of freshwater quality",0.593875
+325,"root diameter","regulation of freshwater quantity",0.569
+326,"root diameter","regulation of hazards and extreme events",0.651
+327,"root dry matter content","formation and protection of soils",0.448375
+328,"root dry matter content","regulation of climate",0.55675
+329,"root dry matter content","regulation of freshwater quantity",0.195875
+330,"root dry matter content","regulation of hazards and extreme events",0.232625
+331,"root exudates","formation and protection of soils",0.521
+332,"root exudates","regulation of climate",0.515375
+333,"root exudates","regulation of freshwater quality",0.51825
+334,"root growth angle","formation and protection of soils",0.53025
+335,"root length density","formation and protection of soils",0.907125
+336,"root length density","regulation of climate",0.935625
+337,"root length density","regulation of freshwater quantity",0.07225
+338,"root length to diameter ratio","formation and protection of soils",0.514625
+339,"root length to diameter ratio","regulation of freshwater quantity",0.500375
+340,"root length","formation and protection of soils",0.889375
+341,"root length","regulation of climate",0.96725
+342,"root length","regulation of freshwater quality",0.785625
+343,"root length","regulation of freshwater quantity",0.245375
+344,"root length","regulation of hazards and extreme events",0.672375
+345,"root lignin content","formation and protection of soils",0.65225
+346,"root lignin content","regulation of climate",0.681
+347,"root litter quantity","formation and protection of soils",0.518125
+348,"root litter quantity","regulation of climate",0.504875
+349,"root mass density","formation and protection of soils",0.68025
+350,"root mass density","regulation of climate",0.71625
+351,"root mass density","regulation of freshwater quality",0.636125
+352,"root mass density","regulation of freshwater quantity",0.56975
+353,"root mass density","regulation of hazards and extreme events",0.708375
+354,"root mass ratio","regulation of climate",0.64825
+355,"root mass ratio","regulation of detrimental organisms",0.610875
+356,"root mass","formation and protection of soils",0.594
+357,"root mass","habitat creation and maintenance",0.661
+358,"root mass","regulation of climate",0.6565
+359,"root mass","regulation of freshwater quality",0.639625
+360,"root nitrogen content","formation and protection of soils",0.830875
+361,"root nitrogen content","regulation of climate",0.790625
+362,"root nitrogen content","regulation of freshwater quantity",0.49675
+363,"root number","formation and protection of soils",0.537875
+364,"root number","regulation of freshwater quality",0.51525
+365,"root phosphorus content","formation and protection of soils",0.61925
+366,"root polyphenols content","formation and protection of soils",0.516
+367,"root respiration","formation and protection of soils",0.50675
+368,"root stiffness","formation and protection of soils",0.5305
+369,"root suberin content","regulation of climate",0.502625
+370,"root surface area","formation and protection of soils",0.617875
+371,"root surface area","regulation of freshwater quality",0.65125
+372,"root surface area","regulation of freshwater quantity",0.477375
+373,"root tensile strength","formation and protection of soils",0.604
+374,"root thickness","regulation of freshwater quantity",0.403875
+375,"root thickness","regulation of hazards and extreme events",0.29
+376,"root tissue density","formation and protection of soils",0.443625
+377,"root tissue density","materials and assistance",0.32425
+378,"root tissue density","regulation of climate",0.465375
+379,"root tissue density","regulation of hazards and extreme events",0.338125
+380,"root volume to diameter ratio","regulation of freshwater quantity",0.50575
+381,"root:shoot ratio","formation and protection of soils",0.46075
+382,"root:shoot ratio","habitat creation and maintenance",0.256625
+383,"root:shoot ratio","regulation of climate",0.42475
+384,"rooting depth","formation and protection of soils",0.454375
+385,"rooting depth","habitat creation and maintenance",0.605625
+386,"rooting depth","materials and assistance",0.217875
+387,"rooting depth","regulation of climate",0.284625
+388,"rooting depth","regulation of freshwater quality",0.474125
+389,"rooting depth","regulation of freshwater quantity",0.625625
+390,"rooting depth","regulation of hazards and extreme events",0.459125
+391,"seed mass","experiences",0.40725
+392,"seed mass","food and feed",0.3435
+393,"seed mass","formation and protection of soils",0.471
+394,"seed mass","materials and assistance",0.400375
+395,"seed mass","pollination and seed dispersal",0.404625
+396,"seed mass","regulation of climate",0.3175
+397,"seed mass","regulation of detrimental organisms",0.39675
+398,"seed mass","regulation of freshwater quantity",0.2075
+399,"seed mass","regulation of hazards and extreme events",0.181625
+400,"seed number","formation and protection of soils",0.663
+401,"seed number","regulation of climate",0.696
+402,"shoot length","materials and assistance",0.708625
+403,"shoot length","regulation of freshwater quantity",0.231125
+404,"specific leaf area","experiences",0.645125
+405,"specific leaf area","food and feed",0.73175
+406,"specific leaf area","formation and protection of soils",0.173375
+407,"specific leaf area","habitat creation and maintenance",0.352125
+408,"specific leaf area","materials and assistance",0.324375
+409,"specific leaf area","medicinal and genetic ressources",0.5105
+410,"specific leaf area","pollination and seed dispersal",0.463625
+411,"specific leaf area","regulation of air quality",0.13225
+412,"specific leaf area","regulation of climate",0.020625
+413,"specific leaf area","regulation of detrimental organisms",0.241
+414,"specific leaf area","regulation of freshwater quality",0.17575
+415,"specific leaf area","regulation of freshwater quantity",0.4075
+416,"specific leaf area","regulation of hazards and extreme events",0.082
+417,"specific root area","materials and assistance",0.64175
+418,"specific root area","regulation of hazards and extreme events",0.404875
+419,"specific root length","formation and protection of soils",0.172
+420,"specific root length","regulation of climate",0.1245
+421,"specific root length","regulation of hazards and extreme events",0.315
+422,"spur length","pollination and seed dispersal",0.541625
+423,"stalk length","pollination and seed dispersal",0.2335
+424,"stamen intactness","pollination and seed dispersal",0.5445
+425,"stem conductance","regulation of freshwater quantity",0.309125
+426,"stem dry matter content","formation and protection of soils",0.468375
+427,"stem dry matter content","regulation of hazards and extreme events",0.5805
+428,"stem nitrogen content","formation and protection of soils",0.395875
+429,"stem nitrogen content","regulation of detrimental organisms",0.584125
+430,"stem number","regulation of freshwater quality",0.511375
+431,"stomatal conductance","regulation of air quality",0.803125
+432,"stomatal conductance","regulation of climate",0.67225
+433,"stomatal conductance","regulation of detrimental organisms",0.38775
+434,"stomatal conductance","regulation of freshwater quantity",0.246625
+435,"stomatal conductance","regulation of hazards and extreme events",0.437125
+436,"thorns","experiences",0.57425
+437,"thorns","habitat creation and maintenance",0.61
+438,"tiller density","formation and protection of soils",0.6315
+439,"tissue alkaloids content","food and feed",0.632375
+440,"tissue carbohydrates content","habitat creation and maintenance",0.608875
+441,"tissue glucosinolates content","habitat creation and maintenance",0.599875
+442,"tissue glucosinolates content","regulation of detrimental organisms",0.391375
+443,"tissue lignin content","formation and protection of soils",0.378
+444,"tissue lignin:nitrogen ratio","experiences",0.218875
+445,"tissue lignin:nitrogen ratio","formation and protection of soils",0.461625
+446,"tissue phenolics content","food and feed",0.71675
+447,"tissue proline content","food and feed",0.72525
+448,"tissue proline content","regulation of hazards and extreme events",0.677875
+449,"tissue protein content","habitat creation and maintenance",0.605375
+450,"tissue silica content","habitat creation and maintenance",0.522
+451,"transpiration rate","regulation of climate",0.5555
+452,"transpiration rate","regulation of freshwater quantity",0.371875
+453,"transpiration rate","regulation of hazards and extreme events",0.291375
+454,"volatile organic compounds","habitat creation and maintenance",0.313
+455,"volatile organic compounds","regulation of air quality",0.0435
+456,"water uptake capacity","regulation of climate",0.525875
+457,"water uptake rate","regulation of hazards and extreme events",0.515875
+458,"water use efficiency","regulation of climate",0.51775
+459,"water use","regulation of freshwater quantity",0.401625
+460,"water use","regulation of hazards and extreme events",0.268625
+461,"wood density","formation and protection of soils",0.503625
+462,"wood density","materials and assistance",0.5745
+463,"wood density","medicinal and genetic ressources",0.506
+464,"wood density","regulation of climate",0.6315
+465,"wood density","regulation of detrimental organisms",0.2895
+466,"wood density","regulation of freshwater quantity",0.163375
+467,"wood density","regulation of hazards and extreme events",0.202
+468,"wood phosphorus content","formation and protection of soils",0.559625
+469,"wood specific gravity","regulation of climate",0.65775
+470,"xylem vulnerability","regulation of hazards and extreme events",0.633625
+471,"yield","food and feed",0.806625
+472,"yield","habitat creation and maintenance",0.749
+473,"yield","regulation of climate",0.48225
+474,"yield","regulation of freshwater quality",0.56725

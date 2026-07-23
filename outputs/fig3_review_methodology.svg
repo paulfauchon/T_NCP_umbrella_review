@@ -1,0 +1,128 @@
+<svg width="1040" height="708" viewBox="0 0 1040 708" xmlns="http://www.w3.org/2000/svg">
+<rect width="1040" height="708" fill="#fcfcfb"/>
+<text x="44" y="52" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="23" font-weight="800" fill="#0b0b0b">How a review is done predicts what it concludes</text>
+<text x="44" y="80" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="13.5" fill="#52514e">Each dot is one systematic review, placed by the share of its directional evidence reported as positive.</text>
+<text x="44" y="99" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="13.5" fill="#52514e">Reviews using less rigorous methods report systematically more positive trait–NCP relationships. Exploratory (n = 21).</text>
+<text x="517" y="158" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="11" font-weight="700" fill="#2a78d6" text-anchor="middle">← more rigorous, less positive</text>
+<text x="874" y="158" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="11" font-weight="700" fill="#eb6834" text-anchor="middle">less rigorous, more positive →</text>
+<line x1="470" y1="186" x2="470" y2="638" stroke="#f1f0eb"/>
+<text x="470" y="180" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">50%</text>
+<line x1="564" y1="186" x2="564" y2="638" stroke="#f1f0eb"/>
+<text x="564" y="180" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">60%</text>
+<line x1="658" y1="186" x2="658" y2="638" stroke="#f1f0eb"/>
+<text x="658" y="180" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">70%</text>
+<line x1="752" y1="186" x2="752" y2="638" stroke="#f1f0eb"/>
+<text x="752" y="180" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">80%</text>
+<line x1="846" y1="186" x2="846" y2="638" stroke="#f1f0eb"/>
+<text x="846" y="180" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">90%</text>
+<line x1="940" y1="186" x2="940" y2="638" stroke="#f1f0eb"/>
+<text x="940" y="180" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">100%</text>
+<text x="44" y="252" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="14" font-weight="700" fill="#0b0b0b">Synthesis method</text>
+<rect x="676.3" y="230.0" width="149.1" height="40.0" fill="#eb6834" opacity="0.06"/>
+<line x1="676.3" y1="250.0" x2="819.4" y2="250.0" stroke="#0b0b0b" stroke-width="1.5"/>
+<path d="M825.4,250.0 L816.4,246.0 L816.4,254.0 Z" fill="#0b0b0b"/>
+<text x="750.9" y="242.0" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="11" font-weight="700" fill="#0b0b0b" text-anchor="middle">+16 pts</text>
+<text x="750.9" y="266.0" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" font-weight="700" fill="#0b0b0b" text-anchor="middle">p = 0.06</text>
+<text x="454" y="229" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="11.5" fill="#0b0b0b" text-anchor="end">Quantitative</text>
+<text x="454" y="243" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#52514e" text-anchor="end">n=5</text>
+<circle cx="558.5" cy="230.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
+<circle cx="587.5" cy="230.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
+<circle cx="608.2" cy="230.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
+<circle cx="736.3" cy="230.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
+<circle cx="891.2" cy="230.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
+<path d="M676.3,222.0 L683.3,230.0 L676.3,238.0 L669.3,230.0 Z" fill="#2a78d6" stroke="#fff" stroke-width="1.4"/>
+<text x="676.3" y="217" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10.5" font-weight="700" fill="#2a78d6" text-anchor="middle">72%</text>
+<text x="454" y="269" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="11.5" fill="#0b0b0b" text-anchor="end">Narrative only</text>
+<text x="454" y="283" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#52514e" text-anchor="end">n=16</text>
+<circle cx="590.9" cy="270.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="637.9" cy="270.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="671.4" cy="270.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="690.3" cy="270.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="714.4" cy="270.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="776.5" cy="270.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="839.3" cy="270.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="846.0" cy="281.6" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="897.3" cy="270.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="902.4" cy="281.6" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="940.0" cy="270.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="940.0" cy="281.6" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="940.0" cy="258.4" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="940.0" cy="293.2" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="940.0" cy="246.8" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="940.0" cy="304.8" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<path d="M825.4,262.0 L832.4,270.0 L825.4,278.0 L818.4,270.0 Z" fill="#eb6834" stroke="#fff" stroke-width="1.4"/>
+<text x="825.4" y="290" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10.5" font-weight="700" fill="#eb6834" text-anchor="middle">88%</text>
+<text x="44" y="386" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="14" font-weight="700" fill="#0b0b0b">Trait definitions</text>
+<rect x="689.3" y="364.0" width="124.2" height="40.0" fill="#eb6834" opacity="0.06"/>
+<line x1="689.3" y1="384.0" x2="807.6" y2="384.0" stroke="#0b0b0b" stroke-width="1.5"/>
+<path d="M813.6,384.0 L804.6,380.0 L804.6,388.0 Z" fill="#0b0b0b"/>
+<text x="751.5" y="376.0" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="11" font-weight="700" fill="#0b0b0b" text-anchor="middle">+13 pts</text>
+<text x="751.5" y="400.0" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" font-weight="700" fill="#0b0b0b" text-anchor="middle">p = 0.03</text>
+<text x="454" y="363" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="11.5" fill="#0b0b0b" text-anchor="end">Explicit</text>
+<text x="454" y="377" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#52514e" text-anchor="end">n=4</text>
+<circle cx="558.5" cy="364.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
+<circle cx="587.5" cy="364.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
+<circle cx="671.4" cy="364.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
+<circle cx="940.0" cy="364.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
+<path d="M689.3,356.0 L696.3,364.0 L689.3,372.0 L682.3,364.0 Z" fill="#2a78d6" stroke="#fff" stroke-width="1.4"/>
+<text x="689.3" y="351" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10.5" font-weight="700" fill="#2a78d6" text-anchor="middle">73%</text>
+<text x="454" y="403" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="11.5" fill="#0b0b0b" text-anchor="end">None</text>
+<text x="454" y="417" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#52514e" text-anchor="end">n=17</text>
+<circle cx="590.9" cy="404.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="608.2" cy="404.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="637.9" cy="404.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="690.3" cy="404.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="714.4" cy="404.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="736.3" cy="404.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="776.5" cy="404.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="839.3" cy="404.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="846.0" cy="415.6" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="891.2" cy="404.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="897.3" cy="415.6" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="902.4" cy="404.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="940.0" cy="404.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="940.0" cy="415.6" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="940.0" cy="392.4" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="940.0" cy="427.2" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="940.0" cy="380.8" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<path d="M813.6,396.0 L820.6,404.0 L813.6,412.0 L806.6,404.0 Z" fill="#eb6834" stroke="#fff" stroke-width="1.4"/>
+<text x="813.6" y="424" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10.5" font-weight="700" fill="#eb6834" text-anchor="middle">87%</text>
+<text x="44" y="520" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="14" font-weight="700" fill="#0b0b0b">Ecological framework</text>
+<rect x="767.9" y="498.0" width="42.1" height="40.0" fill="#eb6834" opacity="0.06"/>
+<line x1="767.9" y1="518.0" x2="803.9" y2="518.0" stroke="#0b0b0b" stroke-width="1.5"/>
+<path d="M809.9,518.0 L800.9,514.0 L800.9,522.0 Z" fill="#0b0b0b"/>
+<text x="788.9" y="510.0" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="11" font-weight="700" fill="#0b0b0b" text-anchor="middle">+4 pts</text>
+<text x="788.9" y="534.0" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" font-weight="700" fill="#8a8f98" text-anchor="middle">n.s.</text>
+<text x="454" y="497" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="11.5" fill="#0b0b0b" text-anchor="end">Explicit</text>
+<text x="454" y="511" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#52514e" text-anchor="end">n=10</text>
+<circle cx="558.5" cy="498.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
+<circle cx="587.5" cy="498.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
+<circle cx="590.9" cy="509.6" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
+<circle cx="608.2" cy="498.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
+<circle cx="776.5" cy="498.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
+<circle cx="846.0" cy="498.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
+<circle cx="891.2" cy="498.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
+<circle cx="940.0" cy="498.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
+<circle cx="940.0" cy="509.6" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
+<circle cx="940.0" cy="486.4" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
+<path d="M767.9,490.0 L774.9,498.0 L767.9,506.0 L760.9,498.0 Z" fill="#2a78d6" stroke="#fff" stroke-width="1.4"/>
+<text x="767.9" y="485" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10.5" font-weight="700" fill="#2a78d6" text-anchor="middle">82%</text>
+<text x="454" y="537" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="11.5" fill="#0b0b0b" text-anchor="end">None</text>
+<text x="454" y="551" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#52514e" text-anchor="end">n=11</text>
+<circle cx="637.9" cy="538.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="671.4" cy="538.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="690.3" cy="538.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="714.4" cy="538.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="736.3" cy="538.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="839.3" cy="538.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="897.3" cy="538.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="902.4" cy="549.6" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="940.0" cy="538.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="940.0" cy="549.6" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<circle cx="940.0" cy="526.4" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
+<path d="M809.9,530.0 L816.9,538.0 L809.9,546.0 L802.9,538.0 Z" fill="#eb6834" stroke="#fff" stroke-width="1.4"/>
+<text x="809.9" y="558" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10.5" font-weight="700" fill="#eb6834" text-anchor="middle">86%</text>
+<text x="705" y="656" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10.5" fill="#52514e" text-anchor="middle">Share of a review’s directional evidence reported as positive (mean ◆ per group)</text>
+<text x="44" y="676" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="12" font-weight="600" fill="#0b0b0b">The between-review differences track how evidence is synthesised — not the ecosystem studied (biome ≈ 10%).</text>
+<text x="44" y="694" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10.5" fill="#52514e">p from a study-level mixed-effects model (2,203 outcomes; random review &amp; trait–NCP-pair effects). Recovery + data-rich-subset checks: Supplementary.</text>
+</svg>

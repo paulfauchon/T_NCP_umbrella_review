@@ -1,0 +1,41 @@
+"trait_grouped","n_pairs","n_rawtrait","r2_by_rawtrait"
+"height to diameter ratio",3,3,1
+"floral odour",6,5,0.861881346450853
+"branching height",6,4,0.656636803903092
+"yield",7,5,0.643893093681219
+"aboveground biomass",14,6,0.635959192997078
+"nectar quantity",5,3,0.47434619091837
+"leaf area index",12,5,0.448596483796399
+"leaf roughness",10,6,0.436045286876789
+"stomatal conductance",8,5,0.435636729718964
+"nectar availability",5,4,0.375
+"leaf cellulose content",5,2,0.313306637135924
+"foliage density",17,7,0.304971486284036
+"leaf wax",6,3,0.294115471230035
+"leaf toughness",7,4,0.264040460561643
+"mycorrhizal colonization",4,2,0.256762940013931
+"fine root fraction",8,3,0.253098058337037
+"growth rate",9,4,0.251944835278925
+"flower colour",3,2,0.25
+"flower number",3,2,0.25
+"root diameter",5,2,0.243765082833484
+"belowground biomass",5,2,0.243303820821291
+"root allocation",4,2,0.242861574244182
+"root density",6,2,0.208732994385757
+"root length density",6,3,0.206323178068802
+"aboveground litter",6,2,0.193186190367195
+"flowering time",7,3,0.179172193249359
+"leaf phenolics content",4,2,0.135860533630541
+"crown size",11,3,0.134726970682889
+"height",22,5,0.132417872048428
+"leaf life span",5,2,0.0985734816927422
+"diameter at breast height",10,4,0.0819538955361473
+"root surface area",4,2,0.0511566083211347
+"root length",6,2,0.0503746644480852
+"nitrogen fixing capacity",7,3,0.0481174110642551
+"rooting depth",8,2,0.0413455763473906
+"floral display size",9,5,0.0391359286060321
+"leaf photosynthetic rate",5,2,0.0254696192773974
+"transpiration rate",4,2,0.0147604536717865
+"leaf area",13,2,0.00369622341132133
+"leaf nitrogen content",10,2,0.00199586462688361
