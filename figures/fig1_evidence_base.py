@@ -16,7 +16,8 @@
 import csv, os, sys, math, statistics as st
 from collections import defaultdict
 
-HERE = os.path.dirname(os.path.abspath(__file__))
+#HERE = os.path.dirname(os.path.abspath(__file__))
+HERE = os.getcwd() #for RStudio environment
 ROOT = os.path.dirname(HERE) if os.path.basename(HERE) == "figures" else HERE
 D = lambda f: os.path.join(ROOT, "data", f)
 DM, META, SS, SIG = D("data_model.csv"), D("meta-data2.csv"), D("study_scores.csv"), D("sigma.csv")
@@ -186,4 +187,28 @@ try:
     png = " (+ PNG)"
 except Exception:
     png = " (SVG only; pip install cairosvg for PNG)"
+print("wrote %s%s" % (OUT, png))
+
+# or
+#Inkscape is required
+
+import subprocess
+import os
+
+png_file = OUT.replace(".svg", ".png")
+
+try:
+    subprocess.run(
+        [
+            r"C:\Program Files\Inkscape\bin\inkscape.exe",
+            OUT,
+            f"--export-filename={png_file}"
+        ],
+        check=True
+    )
+    png = " (+ PNG)"
+except Exception as e:
+    print("Erreur Inkscape :", e)
+    png = " (SVG only)"
+
 print("wrote %s%s" % (OUT, png))
