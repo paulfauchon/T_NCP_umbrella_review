@@ -134,11 +134,11 @@ p <- ggplot() +
   labs(title = "How a review is done predicts what it concludes",
        subtitle = paste0("Each dot is one systematic review, placed by the share of its directional ",
          "evidence reported as positive.\nReviews using less rigorous methods report systematically ",
-         "more positive trait-NCP relationships. Exploratory (n = ", nrow(rev), ")."),
+         "more positive trait-NCP relationships."),
        x = NULL, y = NULL,
        caption = paste0("Group means shown as diamonds; p from a study-level binomial GLMM ",
          "(2,203 outcomes; random review & trait-NCP-pair effects).\nBetween-review differences track ",
-         "how evidence is synthesised, not the ecosystem studied (biome ~10%; recovery + subset checks in Supplementary).")) +
+         "how evidence is synthesised, not the ecosystem studied (biome ~10%; recovery + subset checks in Supplementary).\n(n = ", nrow(rev), ", one review did not provide any directional evidence).")) +
   theme_void(base_size = 11) +
   theme(axis.text.x.top = element_text(size = 9, color = SUB),
         plot.title = element_text(face = "bold", size = 16),
@@ -152,3 +152,4 @@ ggsave(paste0(out, ".png"), p, width = 11, height = 8, dpi = 200, bg = "#fcfcfb"
 ok <- requireNamespace("svglite", quietly = TRUE)
 if (ok) ggsave(paste0(out, ".svg"), p, width = 11, height = 8, bg = "#fcfcfb")
 message("wrote ", out, ".png", if (ok) " (+ .svg)" else "", " ; outputs/fig3_glmm.csv")
+
