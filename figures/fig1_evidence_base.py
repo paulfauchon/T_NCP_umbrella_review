@@ -43,13 +43,7 @@ for s in revs:
     try: qy.append((int(float(meta[s]["year"])), ss[s]))
     except Exception: pass
 
-# b) coverage organ × ncp-category
-organs = ["leaf", "whole plant", "root", "stem", "flower", "reproductive", "litter", "life history"]
-cats = ["regulation", "material", "non-material"]
-cov = defaultdict(float)
-for r in dm: cov[(r["trait_category"], r["ncp_category"])] += num(r["ntot"])
-
-# c) redundancy: shared studies per review pair (recovered from sigma)
+# b) redundancy: shared studies per review pair (recovered from sigma)
 rows = list(csv.reader(open(SIG))); mat = [[float(x) for x in r] for r in rows[1:]]; nrev = len(rows[0])
 nj = [1 / mat[i][i] if mat[i][i] > 0 else 0 for i in range(nrev)]
 shared = [round(mat[i][j] * nj[i] * nj[j]) for i in range(nrev) for j in range(i + 1, nrev)]
@@ -57,6 +51,12 @@ sb = {"0": 0, "1": 0, "2": 0, "3–5": 0, "6+": 0}
 for x in shared:
     sb["0" if x == 0 else "1" if x == 1 else "2" if x == 2 else "3–5" if x <= 5 else "6+"] += 1
 SPAIRS = len(shared)
+
+# c) coverage organ × ncp-category
+organs = ["leaf", "whole plant", "root", "stem", "flower", "reproductive", "litter", "life history"]
+cats = ["regulation", "material", "non-material"]
+cov = defaultdict(float)
+for r in dm: cov[(r["trait_category"], r["ncp_category"])] += num(r["ntot"])
 
 # d) depth: studies per relationship
 ps = defaultdict(float)
@@ -131,9 +131,22 @@ s.append(f'<text x="{x0+PW-6:.0f}" y="{y0+15}" {F} font-size="10" fill="{INK}" t
 s.append(f'<text x="{x0+PW-6:.0f}" y="{y0+30}" {F} font-size="9.5" fill="{SUB}" text-anchor="end">β = {b1:.3f} yr⁻¹ (95% CI {ci_lo:.3f}, {ci_hi:.3f}); p = {pval:.2f}; n = {nn}</text>')
 s.append(f'<text x="{x0-42}" y="{y0+PH/2:.0f}" {F} font-size="10.5" fill="{SUB}" text-anchor="middle" transform="rotate(-90 {x0-42} {y0+PH/2:.0f})">review quality score</text>')
 
-# ---- b) coverage heatmap ----
+# ---- b) redundancy ----
 x0, y0 = PX[1], PY[0]
-s.append(f'<text x="{x0}" y="{y0-12}" {F} font-size="13.5" font-weight="700" fill="{INK}">b  Evidence concentrated on leaf × regulating</text>')
+s.append(f'<text x="{x0}" y="{y0-12}" {F} font-size="13.5" font-weight="700" fill="{INK}">b  Reviews are largely independent</text>')
+axes(x0, y0, PW, PH); order = ["0", "1", "2", "3–5", "6+"]; mxs = max(sb.values()); bw = PW / len(order)
+for i, k in enumerate(order):
+    v = sb[k]; bh = 0.9 * PH * v / mxs; col = BLUE if k == "0" else MUTE
+    s.append(f'<rect x="{x0+i*bw+bw*0.16:.0f}" y="{y0+PH-bh:.0f}" width="{bw*0.68:.0f}" height="{bh:.0f}" fill="{col}"/>')
+    s.append(f'<text x="{x0+i*bw+bw/2:.0f}" y="{y0+PH-bh-6:.0f}" {F} font-size="10" font-weight="{"700" if k=="0" else "400"}" fill="{INK if k=="0" else SUB}" text-anchor="middle">{round(100*v/SPAIRS)}%</text>')
+    s.append(f'<text x="{x0+i*bw+bw/2:.0f}" y="{y0+PH+16}" {F} font-size="9.5" fill="{SUB}" text-anchor="middle">{esc(k)}</text>')
+s.append(f'<text x="{x0+PW/2:.0f}" y="{y0+PH+32}" {F} font-size="10.5" fill="{SUB}" text-anchor="middle">primary studies shared between a pair of reviews (n = {SPAIRS} pairs)</text>')
+s.append(f'<text x="{x0-42}" y="{y0+PH/2:.0f}" {F} font-size="10.5" fill="{SUB}" text-anchor="middle" transform="rotate(-90 {x0-42} {y0+PH/2:.0f})">% of review pairs</text>')
+s.append(f'<text x="{x0+PW-6:.0f}" y="{y0+16}" {F} font-size="10" font-weight="700" fill="{BLUE}" text-anchor="end">{round(100*sb["0"]/SPAIRS)}% share none · 10.7% CCA (overall redundancy)</text>')
+
+# ---- c) coverage heatmap ----
+x0, y0 = PX[0], PY[1]
+s.append(f'<text x="{x0}" y="{y0-12}" {F} font-size="13.5" font-weight="700" fill="{INK}">c  Evidence concentrated on leaf × regulating</text>')
 olab = {"leaf":"Leaf","whole plant":"Whole-plant","root":"Root","stem":"Stem","flower":"Flower","reproductive":"Reprod.","litter":"Litter","life history":"Life hist."}
 clab = {"regulation":"Regulating","material":"Material","non-material":"Non-mat."}
 maxv = max(cov.values()); cw = (PW - 120) / len(cats); ch = PH / len(organs); gx0 = x0 + 120
@@ -149,19 +162,6 @@ for i, o in enumerate(organs):
         if v > 0:
             s.append(f'<text x="{cx+cw/2:.0f}" y="{cy+ch/2+3:.0f}" {F} font-size="8.5" fill="{"#fff" if t>0.5 else "#52514e"}" text-anchor="middle">{int(v)}</text>')
 s.append(f'<text x="{gx0+(PW-120)/2:.0f}" y="{y0+PH+16}" {F} font-size="9.5" fill="{SUB}" text-anchor="middle">colour = primary studies; many combinations have none</text>')
-
-# ---- c) redundancy ----
-x0, y0 = PX[0], PY[1]
-s.append(f'<text x="{x0}" y="{y0-12}" {F} font-size="13.5" font-weight="700" fill="{INK}">c  Reviews are largely independent</text>')
-axes(x0, y0, PW, PH); order = ["0", "1", "2", "3–5", "6+"]; mxs = max(sb.values()); bw = PW / len(order)
-for i, k in enumerate(order):
-    v = sb[k]; bh = 0.9 * PH * v / mxs; col = BLUE if k == "0" else MUTE
-    s.append(f'<rect x="{x0+i*bw+bw*0.16:.0f}" y="{y0+PH-bh:.0f}" width="{bw*0.68:.0f}" height="{bh:.0f}" fill="{col}"/>')
-    s.append(f'<text x="{x0+i*bw+bw/2:.0f}" y="{y0+PH-bh-6:.0f}" {F} font-size="10" font-weight="{"700" if k=="0" else "400"}" fill="{INK if k=="0" else SUB}" text-anchor="middle">{round(100*v/SPAIRS)}%</text>')
-    s.append(f'<text x="{x0+i*bw+bw/2:.0f}" y="{y0+PH+16}" {F} font-size="9.5" fill="{SUB}" text-anchor="middle">{esc(k)}</text>')
-s.append(f'<text x="{x0+PW/2:.0f}" y="{y0+PH+32}" {F} font-size="10.5" fill="{SUB}" text-anchor="middle">primary studies shared between a pair of reviews (n = {SPAIRS} pairs)</text>')
-s.append(f'<text x="{x0-42}" y="{y0+PH/2:.0f}" {F} font-size="10.5" fill="{SUB}" text-anchor="middle" transform="rotate(-90 {x0-42} {y0+PH/2:.0f})">% of review pairs</text>')
-s.append(f'<text x="{x0+PW-6:.0f}" y="{y0+16}" {F} font-size="10" font-weight="700" fill="{BLUE}" text-anchor="end">{round(100*sb["0"]/SPAIRS)}% share none · ~11% overall redundancy</text>')
 
 # ---- d) depth ----
 x0, y0 = PX[1], PY[1]
