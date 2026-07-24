@@ -39,6 +39,7 @@ dm$trait_def <- low(m$Specific_Traits_Definitions)
 dm$method    <- ifelse(grepl("vote", low(m$Statistical_Method_to_Assess_the_Effect)), "yes_quant", "narrative")
 dm$eco       <- low(m$Ecological_standpoint)
 dmd <- dm[(dm$Npos + dm$Nneg) > 0, ]
+#From  here J=21 because review #382 provide only significant observations but without direction given, these are then marginalized
 
 # ---- (1) study-level binomial GLMM per attribute ---------------------------
 glmm_one <- function(var, rig, loose) {

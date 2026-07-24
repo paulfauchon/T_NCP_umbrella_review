@@ -37,12 +37,11 @@ XLSX <- file.path(DATA_DIR, "2nd order SR Traits - Services.xlsx")
 reviews <- c("3","171","235","276","B","244","54","165","161","177","124",
              "332","314","A","125","151","55","382","50","238","232","35")
 
-# Normalise a DOI from any messy cell
+# Normalise a DOI from any messy cell, can capture the articles coded with no found doi : ndoi1, ndoi2 etc.
 norm_doi <- function(x) {
   x <- tolower(trimws(as.character(x)))
-  m <- regmatches(x, regexpr("10\\.\\d{4,9}/[^\\s\"\\)\\]]+", x, perl = TRUE))
-  if (length(m) == 0) return(NA_character_)
-  sub("\\.$", "", m)
+  if (length(x) == 0) return(NA_character_)
+  sub("\\.$", "", x)
 }
 
 # Pull (source_id, DOI) pairs from one sheet given candidate DOI columns
@@ -59,11 +58,8 @@ pull <- function(sheet, doi_cols) {
   do.call(rbind, out)
 }
 
-pairs <- unique(rbind(
-  pull("E1_primary_papers", c("DOI", "doi_article", "crossref_doi", "crossref_result_DOI")),
-  pull("E2",                c("doi")),
-  pull("E3",                c("DOI"))
-))
+#All the DOI are in E3 (combination of E1 and E2)
+pairs <- unique(pull("E3",                c("DOI")))
 pairs <- pairs[pairs$source_id %in% reviews & !is.na(pairs$doi), ]
 
 # DOI set per review
@@ -71,6 +67,11 @@ doi_sets <- lapply(reviews, function(j) unique(pairs$doi[pairs$source_id == j]))
 names(doi_sets) <- reviews
 n_j <- vapply(doi_sets, length, integer(1))
 if (any(n_j == 0)) stop("Reviews with no DOI: ", paste(reviews[n_j == 0], collapse = ", "))
+# Review 382:
+# 122 primary-study identifiers available.
+# Only 50 are included in the quantitative synthesis, the others are not about plant traits
+# All 122 are retained for overlap detection because excluded papers are expected not to overlap with other reviews.
+n_j["382"] <- 50
 
 # Shared-study counts C, then Sigma = D^{-1} C D^{-1}
 J <- length(reviews)
@@ -98,3 +99,4 @@ message("Overlap ratio sum(Sigma)/sum(diag): ",
         round(sum(Sigma) / sum(diag(Sigma)), 3),
         " | min eigenvalue: ", signif(min(eigen(Sigma, symmetric = TRUE,
                                                  only.values = TRUE)$values), 3))
+
