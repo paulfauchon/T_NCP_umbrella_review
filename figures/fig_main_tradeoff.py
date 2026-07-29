@@ -95,9 +95,10 @@ def build(groups, out_svg):
     nrows = sum(len(cs) for _,cs in groups); ncols = len(flatcols)
     Wd = X0 + ncols*CW + PAD; Ht = Y0 + nrows*CH + 150
     s = [f'<svg width="{Wd}" height="{Ht}" viewBox="0 0 {Wd} {Ht}" xmlns="http://www.w3.org/2000/svg">',
-         f'<rect width="{Wd}" height="{Ht}" fill="#fcfcfb"/>',
-         f'<text x="40" y="40" {FONT} font-size="18" font-weight="700" fill="#0b0b0b">Same trait, opposite contributions</text>',
-         f'<text x="40" y="62" {FONT} font-size="11" fill="#52514e">Posterior effect direction of each well-studied trait–NCP relationship (pair-level model). Cell number = primary studies.</text>']
+         f'<rect width="{Wd}" height="{Ht}" fill="#ffffff"/>'#,
+         #f'<text x="40" y="40" {FONT} font-size="18" font-weight="700" fill="#0b0b0b">Same trait, opposite contributions</text>',
+         #f'<text x="40" y="62" {FONT} font-size="11" fill="#52514e">Posterior effect direction of each well-studied trait–NCP relationship (pair-level model). Cell number = primary studies.</text>'
+         ]
     # column category headers
     cx = X0
     for cat,cs in COLS:
@@ -166,7 +167,31 @@ def build(groups, out_svg):
     except Exception:
         png = " (SVG only; pip install cairosvg for PNG)"
     print("wrote %s  [%d traits x %d NCPs]%s" % (out_svg, nrows, ncols, png))
+    # optional PNG via Inkscape
+    import subprocess
+    
+    png_file = out_svg.replace(".svg", ".png")
+    
+    try:
+        subprocess.run(
+            [
+                r"C:\Program Files\Inkscape\bin\inkscape.exe",
+                out_svg,
+                f"--export-filename={png_file}",
+            ],
+            check=True,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+        )
+        png = " (+ PNG)"
+    except Exception as e:
+        print("Erreur Inkscape :", e)
+        png = " (SVG only)"
+    
+    print("wrote %s  [%d traits x %d NCPs]%s" % (out_svg, nrows, ncols, png))
 
 if __name__ == "__main__":
     build(GROUPS_MAIN, os.path.join(OUT_DIR, "fig_main_tradeoff.svg"))
     build(GROUPS_SUPP, os.path.join(OUT_DIR, "fig_supp_tradeoff.svg"))
+
+

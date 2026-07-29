@@ -73,9 +73,10 @@ BLUE, MUTE, INK, SUB, ORANGE = "#2a78d6", "#c8cbd1", "#0b0b0b", "#52514e", "#eb6
 W, H = 1080, 820
 PX, PY, PW, PH = [60, 610], [135, 490], 410, 225
 s = [f'<svg width="{W}" height="{H}" viewBox="0 0 {W} {H}" xmlns="http://www.w3.org/2000/svg">',
-     f'<rect width="{W}" height="{H}" fill="#fcfcfb"/>',
-     f'<text x="44" y="46" {F} font-size="21" font-weight="800" fill="{INK}">A young, low-quality, redundant and uneven evidence base</text>',
-     f'<text x="44" y="70" {F} font-size="12.5" fill="{SUB}">22 systematic reviews · 474 trait–NCP relationships · 171 traits × 13 NCPs · 2,203 primary-study outcomes.</text>']
+     f'<rect width="{W}" height="{H}" fill="#ffffff"/>'#, #here change color to either #ffffff for a full white background or #fcfcfb for a beige/kind greyish background
+     #f'<text x="44" y="46" {F} font-size="21" font-weight="800" fill="{INK}">A young, low-quality, redundant and uneven evidence base</text>',
+     #f'<text x="44" y="70" {F} font-size="12.5" fill="{SUB}">22 systematic reviews · 474 trait–NCP relationships · 171 traits × 13 NCPs · 2,203 primary-study outcomes.</text>'
+     ]
 def axes(x, y, w, h):
     s.append(f'<line x1="{x}" y1="{y+h}" x2="{x+w}" y2="{y+h}" stroke="#9a9a94" stroke-width="1.2"/>')
     s.append(f'<line x1="{x}" y1="{y}" x2="{x}" y2="{y+h}" stroke="#9a9a94" stroke-width="1.2"/>')
@@ -128,7 +129,7 @@ def tp(t, df):
     ib = math.exp(lb) * betacf(x, a, 0.5) / a
     return ib  # two-sided p
 pval = tp(tval, nn - 2)
-s.append(f'<text x="{x0+PW-6:.0f}" y="{y0+15}" {F} font-size="10" fill="{INK}" text-anchor="end">no improvement with year</text>')
+#s.append(f'<text x="{x0+PW-6:.0f}" y="{y0+15}" {F} font-size="10" fill="{INK}" text-anchor="end">no improvement with year</text>')
 s.append(f'<text x="{x0+PW-6:.0f}" y="{y0+30}" {F} font-size="9.5" fill="{SUB}" text-anchor="end">β = {b1:.3f} yr⁻¹ (95% CI {ci_lo:.3f}, {ci_hi:.3f}); p = {pval:.2f}; n = {nn}</text>')
 s.append(f'<text x="{x0-42}" y="{y0+PH/2:.0f}" {F} font-size="10.5" fill="{SUB}" text-anchor="middle" transform="rotate(-90 {x0-42} {y0+PH/2:.0f})">review quality score</text>')
 
@@ -143,7 +144,7 @@ for i, k in enumerate(order):
     s.append(f'<text x="{x0+i*bw+bw/2:.0f}" y="{y0+PH+16}" {F} font-size="9.5" fill="{SUB}" text-anchor="middle">{esc(k)}</text>')
 s.append(f'<text x="{x0+PW/2:.0f}" y="{y0+PH+32}" {F} font-size="10.5" fill="{SUB}" text-anchor="middle">primary studies shared between a pair of reviews (n = {SPAIRS} pairs)</text>')
 s.append(f'<text x="{x0-42}" y="{y0+PH/2:.0f}" {F} font-size="10.5" fill="{SUB}" text-anchor="middle" transform="rotate(-90 {x0-42} {y0+PH/2:.0f})">% of review pairs</text>')
-s.append(f'<text x="{x0+PW-6:.0f}" y="{y0+16}" {F} font-size="10" font-weight="700" fill="{BLUE}" text-anchor="end">{round(100*sb["0"]/SPAIRS)}% share none · 10.7% CCA (overall redundancy)</text>')
+#s.append(f'<text x="{x0+PW-6:.0f}" y="{y0+16}" {F} font-size="10" font-weight="700" fill="{BLUE}" text-anchor="end">{round(100*sb["0"]/SPAIRS)}% share none · 10.7% CCA (overall redundancy)</text>')
 
 # ---- c) coverage heatmap ----
 x0, y0 = PX[0], PY[1]
@@ -177,8 +178,8 @@ s.append(f'<text x="{x0+PW/2:.0f}" y="{y0+PH+32}" {F} font-size="10.5" fill="{SU
 s.append(f'<text x="{x0-42}" y="{y0+PH/2:.0f}" {F} font-size="10.5" fill="{SUB}" text-anchor="middle" transform="rotate(-90 {x0-42} {y0+PH/2:.0f})">% of relationships</text>')
 
 s.append(f'<line x1="44" y1="{H-52}" x2="{W-44}" y2="{H-52}" stroke="#ecebe5"/>')
-s.append(f'<text x="44" y="{H-30}" {F} font-size="12" font-weight="600" fill="{INK}">The field is expanding fast without consolidating: reviews are low-quality (and no better over time), largely independent,</text>')
-s.append(f'<text x="44" y="{H-12}" {F} font-size="12" font-weight="600" fill="{INK}">skewed toward leaf traits and regulating services, and — relationship by relationship — very thinly evidenced.</text>')
+#s.append(f'<text x="44" y="{H-30}" {F} font-size="12" font-weight="600" fill="{INK}">The field is expanding fast without consolidating: reviews are low-quality (and no better over time), largely independent,</text>')
+#s.append(f'<text x="44" y="{H-12}" {F} font-size="12" font-weight="600" fill="{INK}">skewed toward leaf traits and regulating services, and — relationship by relationship — very thinly evidenced.</text>')
 s.append('</svg>')
 open(OUT, "w").write("\n".join(s))
 try:
@@ -204,7 +205,9 @@ try:
             OUT,
             f"--export-filename={png_file}"
         ],
-        check=True
+        check=True,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
     )
     png = " (+ PNG)"
 except Exception as e:
@@ -212,3 +215,4 @@ except Exception as e:
     png = " (SVG only)"
 
 print("wrote %s%s" % (OUT, png))
+

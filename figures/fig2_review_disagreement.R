@@ -100,11 +100,11 @@ p <- ggplot() +
             hjust = 1, size = 2.7, color = "#52514e") +
   scale_x_continuous(limits = c(-1.7, 3.6)) +
   scale_y_continuous(limits = c(0.3, ny + 1.1)) +
-  labs(title = "The same relationship, opposite verdicts across reviews",
-       subtitle = paste0("Each dot is one systematic review's overall conclusion for that ",
-                         "trait-NCP relationship (well-covered pairs, >=", MIN_REVIEWS, " reviews)."),
-       caption = paste0("Reviews contradict one another pair by pair: the reported direction depends\n",
-                        "more on which review reports it than on the trait or the service involved.")) +
+  # labs(title = "The same relationship, opposite verdicts across reviews",
+  #      subtitle = paste0("Each dot is one systematic review's overall conclusion for that ",
+  #                        "trait-NCP relationship (well-covered pairs, >=", MIN_REVIEWS, " reviews)."),
+  #      caption = paste0("Reviews contradict one another pair by pair: the reported direction depends\n",
+  #                       "more on which review reports it than on the trait or the service involved.")) +
   theme_void(base_size = 11) +
   theme(plot.title = element_text(face = "bold", size = 15, hjust = 0),
         plot.subtitle = element_text(size = 10, color = "#52514e", hjust = 0,
@@ -112,7 +112,7 @@ p <- ggplot() +
         plot.caption = element_text(face = "bold", size = 9.5, color = "#0b0b0b",
                                     hjust = 0, margin = margin(t = 10)),
         plot.margin = margin(16, 20, 14, 20),
-        plot.background = element_rect(fill = "#fcfcfb", color = NA))
+        plot.background = element_rect(fill = "#ffffff", color = NA))
 
 out <- file.path(root, "outputs", "fig2_review_disagreement")
 ggsave(paste0(out, ".png"), p, width = 10.5, height = 2.6 + ny*0.52, dpi = 200, bg = "#fcfcfb")
@@ -120,3 +120,4 @@ ok_svg <- requireNamespace("svglite", quietly = TRUE)
 if (ok_svg) ggsave(paste0(out, ".svg"), p, width = 10.5, height = 2.6 + ny*0.52, bg = "#fcfcfb")
 message("wrote ", out, ".png", if (ok_svg) " (+ .svg)" else " (install 'svglite' for .svg)",
         "  [", ny, " pairs]")
+

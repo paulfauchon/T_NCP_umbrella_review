@@ -131,21 +131,21 @@ p <- ggplot() +
   scale_x_continuous(limits = c(.24, 1.02), breaks = seq(.5,1,.1),
                      labels = paste0(seq(50,100,10), "%"), position = "top") +
   scale_y_continuous(limits = c(.3, 7.2)) +
-  labs(title = "How a review is done predicts what it concludes",
-       subtitle = paste0("Each dot is one systematic review, placed by the share of its directional ",
-         "evidence reported as positive.\nReviews using less rigorous methods report systematically ",
-         "more positive trait-NCP relationships."),
-       x = NULL, y = NULL,
-       caption = paste0("Group means shown as diamonds; p from a study-level binomial GLMM ",
-         "(2,203 outcomes; random review & trait-NCP-pair effects).\nBetween-review differences track ",
-         "how evidence is synthesised, not the ecosystem studied (biome ~10%; recovery + subset checks in Supplementary).\n(n = ", nrow(rev), ", one review did not provide any directional evidence).")) +
+  # labs(title = "How a review is done predicts what it concludes",
+  #      subtitle = paste0("Each dot is one systematic review, placed by the share of its directional ",
+  #        "evidence reported as positive.\nReviews using less rigorous methods report systematically ",
+  #        "more positive trait-NCP relationships."),
+  #      x = NULL, y = NULL,
+  #      caption = paste0("Group means shown as diamonds; p from a study-level binomial GLMM ",
+  #        "(2,203 outcomes; random review & trait-NCP-pair effects).\nBetween-review differences track ",
+  #        "how evidence is synthesised, not the ecosystem studied (biome ~10%; recovery + subset checks in Supplementary).\n(n = ", nrow(rev), ", one review did not provide any directional evidence).")) +
   theme_void(base_size = 11) +
   theme(axis.text.x.top = element_text(size = 9, color = SUB),
         plot.title = element_text(face = "bold", size = 16),
         plot.subtitle = element_text(size = 10, color = SUB, margin = margin(b = 10)),
         plot.caption = element_text(hjust = 0, size = 8.5, color = SUB),
         plot.margin = margin(16, 24, 14, 24),
-        plot.background = element_rect(fill = "#fcfcfb", color = NA))
+        plot.background = element_rect(fill = "#ffffff", color = NA))
 
 out <- file.path(root, "outputs", "fig3_review_methodology")
 ggsave(paste0(out, ".png"), p, width = 11, height = 8, dpi = 200, bg = "#fcfcfb")

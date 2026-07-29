@@ -149,15 +149,15 @@ make_fig <- function(traits, out_base, title) {
       plot.title = element_text(face = "bold", size = 15),
       plot.caption = element_text(hjust = 0, size = 7.5, color = "#898781"),
       legend.position = "bottom", legend.key.width = unit(28, "pt"),
-      plot.background = element_rect(fill = "#fcfcfb", color = NA))
+      plot.background = element_rect(fill = "#ffffff", color = NA))
 
   nrow_t <- nrow(traits)
   ggsave(paste0(out_base, ".png"), p, width = 11, height = 2.4 + nrow_t * 0.34,
-         dpi = 200, bg = "#fcfcfb")
+         dpi = 200, bg = "#ffffff")
   ok_svg <- requireNamespace("svglite", quietly = TRUE)
   if (ok_svg)
     ggsave(paste0(out_base, ".svg"), p, width = 11, height = 2.4 + nrow_t * 0.34,
-           bg = "#fcfcfb")
+           bg = "#ffffff")
   message("wrote ", out_base, ".png",
           if (ok_svg) " (+ .svg)" else " (install 'svglite' for .svg)",
           "  [", nrow_t, " traits]")
@@ -167,3 +167,4 @@ make_fig(main_traits, file.path(OUT_DIR, "fig_main_tradeoff"),
          "Same trait, opposite contributions")
 make_fig(supp_traits, file.path(OUT_DIR, "fig_supp_tradeoff"),
          "Same trait, opposite contributions (extended set)")
+
