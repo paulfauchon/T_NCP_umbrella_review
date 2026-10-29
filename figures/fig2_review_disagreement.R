@@ -27,13 +27,13 @@ dm <- read.csv(dm_path, stringsAsFactors = FALSE)
 for (k in c("Npos", "Nneg", "Nnull"))
   dm[[k]] <- suppressWarnings(as.numeric(dm[[k]])); dm[is.na(dm)] <- 0
 
-SHORT_TRAIT <- c("specific leaf area"="Specific leaf area","leaf nitrogen content"="Leaf nitrogen",
- "leaf dry matter content"="Leaf dry-matter content","height"="Plant height","wood density"="Wood density",
+SHORT_TRAIT <- c("specific leaf area"="Specific leaf area","leaf nitrogen content"="leaf N content",
+ "leaf dry matter content"="Leaf dry matter content","height"="Plant height","wood density"="Wood density",
  "root diameter"="Root diameter","aboveground biomass"="Aboveground biomass","leaf area"="Leaf area",
- "leaf phosphorus content"="Leaf phosphorus","crown size"="Crown size","leaf carbon content"="Leaf carbon")
-SHORT_NCP <- c("regulation of climate"="climate regulation","formation and protection of soils"="soil formation",
- "regulation of freshwater quantity"="freshwater regulation","food and feed"="food & feed",
- "regulation of hazards and extreme events"="hazard regulation","regulation of detrimental organisms"="pest regulation")
+ "leaf phosphorus content"="Leaf P content","crown size"="Crown size","leaf carbon content"="leaf C content","foliage density"="Foliage density")
+SHORT_NCP <- c("regulation of climate"="Regulation of climate","formation and protection of soils"="Formation and protection of soils",
+ "regulation of freshwater quantity"="Regulation of freshwater quantity","food and feed"="Food and feed",
+ "regulation of hazards and extreme events"="Regulation of hazards and extreme events","regulation of detrimental organisms"="Regulation of detrimental organisms")
 nice <- function(ts) {
   parts <- strsplit(ts, "__", fixed = TRUE)[[1]]
   t <- ifelse(parts[1] %in% names(SHORT_TRAIT), SHORT_TRAIT[parts[1]],

@@ -66,3 +66,4 @@ cat(sprintf("\nPairs with P>0.90 in either direction: %d / %d\n",
             sum(pair_results$prob_positive > 0.90 |
                   pair_results$prob_negative > 0.90),
             nrow(pair_results)))
+

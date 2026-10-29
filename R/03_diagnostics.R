@@ -84,3 +84,4 @@ comparison <- convergence %>%
 write.csv(comparison, file.path(OUT_DIR, "model_comparison.csv"),
           row.names = FALSE)
 message("Saved outputs/model_comparison.csv")
+

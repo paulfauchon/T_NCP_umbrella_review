@@ -67,3 +67,4 @@ cat(sprintf("phi (count overdispersion, reported separately): median %.1f\n", ph
 cat(sprintf("Sigma overlap ratio (off-diagonal mass): %.3f | mean off-diag corr: %.3f\n",
             ov$overlap_ratio, ov$mean_offdiag_corr))
 cat("===================================================================\n")
+

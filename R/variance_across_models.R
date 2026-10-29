@@ -58,3 +58,4 @@ print(transform(tab,
       row.names = FALSE)
 cat("\nIf review dominates in ALL rows, the two-model design is 'most interpretable\n",
     "parameterisation per question', not cherry-picking. Report this table.\n", sep = "")
+

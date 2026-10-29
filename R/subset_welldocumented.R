@@ -92,3 +92,4 @@ cat(sprintf("  review share of structural variance = %.0f%% [%.0f-%.0f]\n",
 cat("  (full data was ~85%. If it stays high here, review dominance is NOT a\n",
     "   sparsity artefact of single-study pairs.)\n", sep = "")
 write.csv(vd, file.path(OUT_DIR, "subset_welldocumented.csv"), row.names = FALSE)
+

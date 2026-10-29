@@ -1,8 +1,6 @@
 <svg width="1080" height="820" viewBox="0 0 1080 820" xmlns="http://www.w3.org/2000/svg">
-<rect width="1080" height="820" fill="#fcfcfb"/>
-<text x="44" y="46" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="21" font-weight="800" fill="#0b0b0b">A young, low-quality, redundant and uneven evidence base</text>
-<text x="44" y="70" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="12.5" fill="#52514e">22 systematic reviews · 474 trait–NCP relationships · 171 traits × 13 NCPs · 2,203 primary-study outcomes.</text>
-<text x="60" y="123" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="13.5" font-weight="700" fill="#0b0b0b">a  Booming, but not getting more rigorous</text>
+<rect width="1080" height="820" fill="#ffffff"/>
+<text x="60" y="123" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="13.5" font-weight="700" fill="#0b0b0b">a Reviews are not becoming more rigorous</text>
 <line x1="60" y1="360" x2="470" y2="360" stroke="#9a9a94" stroke-width="1.2"/>
 <line x1="60" y1="135" x2="60" y2="360" stroke="#9a9a94" stroke-width="1.2"/>
 <line x1="60" y1="360" x2="470" y2="360" stroke="#f0efe9"/>
@@ -47,87 +45,85 @@
 <circle cx="411" cy="342" r="3.6" fill="none" stroke="#2a78d6" stroke-width="1.5"/>
 <circle cx="411" cy="255" r="3.6" fill="none" stroke="#2a78d6" stroke-width="1.5"/>
 <circle cx="119" cy="161" r="3.6" fill="none" stroke="#2a78d6" stroke-width="1.5"/>
-<text x="464" y="150" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10" fill="#0b0b0b" text-anchor="end">no improvement with year</text>
 <text x="464" y="165" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="end">β = -0.034 yr⁻¹ (95% CI -0.068, 0.000); p = 0.05; n = 22</text>
 <text x="18" y="248" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10.5" fill="#52514e" text-anchor="middle" transform="rotate(-90 18 248)">review quality score</text>
-<text x="610" y="123" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="13.5" font-weight="700" fill="#0b0b0b">b  Evidence concentrated on leaf × regulating</text>
-<text x="778" y="133" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">Regulating</text>
-<text x="875" y="133" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">Material</text>
-<text x="972" y="133" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">Non-mat.</text>
-<text x="722" y="152" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#0b0b0b" text-anchor="end">Leaf</text>
-<rect x="730" y="135" width="95" height="26" fill="#2a78d6" stroke="#fff" stroke-width="1"/>
-<text x="778" y="152" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#fff" text-anchor="middle">1017</text>
-<rect x="827" y="135" width="95" height="26" fill="#79aae5" stroke="#fff" stroke-width="1"/>
-<text x="875" y="152" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#fff" text-anchor="middle">77</text>
-<rect x="923" y="135" width="95" height="26" fill="#a6c6ed" stroke="#fff" stroke-width="1"/>
-<text x="972" y="152" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#52514e" text-anchor="middle">17</text>
-<text x="722" y="180" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#0b0b0b" text-anchor="end">Whole-plant</text>
-<rect x="730" y="163" width="95" height="26" fill="#5392dd" stroke="#fff" stroke-width="1"/>
-<text x="778" y="180" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#fff" text-anchor="middle">265</text>
-<rect x="827" y="163" width="95" height="26" fill="#7faee6" stroke="#fff" stroke-width="1"/>
-<text x="875" y="180" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#fff" text-anchor="middle">62</text>
-<rect x="923" y="163" width="95" height="26" fill="#99beeb" stroke="#fff" stroke-width="1"/>
-<text x="972" y="180" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#52514e" text-anchor="middle">26</text>
-<text x="722" y="208" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#0b0b0b" text-anchor="end">Root</text>
-<rect x="730" y="191" width="95" height="26" fill="#478adb" stroke="#fff" stroke-width="1"/>
-<text x="778" y="208" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#fff" text-anchor="middle">393</text>
-<rect x="827" y="191" width="95" height="26" fill="#bbd4f1" stroke="#fff" stroke-width="1"/>
-<text x="875" y="208" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#52514e" text-anchor="middle">8</text>
-<rect x="923" y="191" width="95" height="26" fill="#f6f5f0" stroke="#fff" stroke-width="1"/>
-<text x="722" y="236" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#0b0b0b" text-anchor="end">Stem</text>
-<rect x="730" y="219" width="95" height="26" fill="#71a5e3" stroke="#fff" stroke-width="1"/>
-<text x="778" y="236" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#fff" text-anchor="middle">100</text>
-<rect x="827" y="219" width="95" height="26" fill="#a9c8ee" stroke="#fff" stroke-width="1"/>
-<text x="875" y="236" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#52514e" text-anchor="middle">15</text>
-<rect x="923" y="219" width="95" height="26" fill="#e9f1fa" stroke="#fff" stroke-width="1"/>
-<text x="972" y="236" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#52514e" text-anchor="middle">1</text>
-<text x="722" y="265" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#0b0b0b" text-anchor="end">Flower</text>
-<rect x="730" y="248" width="95" height="26" fill="#669ee1" stroke="#fff" stroke-width="1"/>
-<text x="778" y="265" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#fff" text-anchor="middle">141</text>
-<rect x="827" y="248" width="95" height="26" fill="#bfd6f2" stroke="#fff" stroke-width="1"/>
-<text x="875" y="265" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#52514e" text-anchor="middle">7</text>
-<rect x="923" y="248" width="95" height="26" fill="#adcbef" stroke="#fff" stroke-width="1"/>
-<text x="972" y="265" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#52514e" text-anchor="middle">13</text>
-<text x="722" y="293" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#0b0b0b" text-anchor="end">Reprod.</text>
-<rect x="730" y="276" width="95" height="26" fill="#a2c4ed" stroke="#fff" stroke-width="1"/>
-<text x="778" y="293" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#52514e" text-anchor="middle">19</text>
-<rect x="827" y="276" width="95" height="26" fill="#dde9f8" stroke="#fff" stroke-width="1"/>
-<text x="875" y="293" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#52514e" text-anchor="middle">2</text>
-<rect x="923" y="276" width="95" height="26" fill="#e9f1fa" stroke="#fff" stroke-width="1"/>
-<text x="972" y="293" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#52514e" text-anchor="middle">1</text>
-<text x="722" y="321" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#0b0b0b" text-anchor="end">Litter</text>
-<rect x="730" y="304" width="95" height="26" fill="#8fb8e9" stroke="#fff" stroke-width="1"/>
-<text x="778" y="321" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#fff" text-anchor="middle">37</text>
-<rect x="827" y="304" width="95" height="26" fill="#f6f5f0" stroke="#fff" stroke-width="1"/>
-<rect x="923" y="304" width="95" height="26" fill="#f6f5f0" stroke="#fff" stroke-width="1"/>
-<text x="722" y="349" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#0b0b0b" text-anchor="end">Life hist.</text>
-<rect x="730" y="332" width="95" height="26" fill="#dde9f8" stroke="#fff" stroke-width="1"/>
-<text x="778" y="349" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#52514e" text-anchor="middle">2</text>
-<rect x="827" y="332" width="95" height="26" fill="#f6f5f0" stroke="#fff" stroke-width="1"/>
-<rect x="923" y="332" width="95" height="26" fill="#f6f5f0" stroke="#fff" stroke-width="1"/>
-<text x="875" y="376" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">colour = primary studies; many combinations have none</text>
-<text x="60" y="478" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="13.5" font-weight="700" fill="#0b0b0b">c  Reviews are largely independent</text>
-<line x1="60" y1="715" x2="470" y2="715" stroke="#9a9a94" stroke-width="1.2"/>
-<line x1="60" y1="490" x2="60" y2="715" stroke="#9a9a94" stroke-width="1.2"/>
-<rect x="73" y="512" width="56" height="202" fill="#2a78d6"/>
-<text x="101" y="506" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10" font-weight="700" fill="#0b0b0b" text-anchor="middle">84%</text>
-<text x="101" y="731" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">0</text>
-<rect x="155" y="695" width="56" height="20" fill="#c8cbd1"/>
-<text x="183" y="689" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10" font-weight="400" fill="#52514e" text-anchor="middle">8%</text>
-<text x="183" y="731" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">1</text>
-<rect x="237" y="711" width="56" height="4" fill="#c8cbd1"/>
-<text x="265" y="705" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10" font-weight="400" fill="#52514e" text-anchor="middle">2%</text>
-<text x="265" y="731" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">2</text>
-<rect x="319" y="709" width="56" height="6" fill="#c8cbd1"/>
-<text x="347" y="703" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10" font-weight="400" fill="#52514e" text-anchor="middle">3%</text>
-<text x="347" y="731" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">3–5</text>
-<rect x="401" y="708" width="56" height="7" fill="#c8cbd1"/>
-<text x="429" y="702" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10" font-weight="400" fill="#52514e" text-anchor="middle">3%</text>
-<text x="429" y="731" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">6+</text>
-<text x="265" y="747" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10.5" fill="#52514e" text-anchor="middle">primary studies shared between a pair of reviews (n = 231 pairs)</text>
-<text x="18" y="602" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10.5" fill="#52514e" text-anchor="middle" transform="rotate(-90 18 602)">% of review pairs</text>
-<text x="464" y="506" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10" font-weight="700" fill="#2a78d6" text-anchor="end">84% share none · ~11% overall redundancy</text>
-<text x="610" y="478" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="13.5" font-weight="700" fill="#0b0b0b">d  Most relationships rest on a single study</text>
+<text x="610" y="123" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="13.5" font-weight="700" fill="#0b0b0b">b  Few primary studies are shared between reviews</text>
+<line x1="610" y1="360" x2="1020" y2="360" stroke="#9a9a94" stroke-width="1.2"/>
+<line x1="610" y1="135" x2="610" y2="360" stroke="#9a9a94" stroke-width="1.2"/>
+<rect x="623" y="158" width="56" height="202" fill="#2a78d6"/>
+<text x="651" y="152" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10" font-weight="700" fill="#0b0b0b" text-anchor="middle">85%</text>
+<text x="651" y="376" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">0</text>
+<rect x="705" y="340" width="56" height="20" fill="#c8cbd1"/>
+<text x="733" y="334" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10" font-weight="400" fill="#52514e" text-anchor="middle">8%</text>
+<text x="733" y="376" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">1</text>
+<rect x="787" y="356" width="56" height="4" fill="#c8cbd1"/>
+<text x="815" y="350" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10" font-weight="400" fill="#52514e" text-anchor="middle">2%</text>
+<text x="815" y="376" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">2</text>
+<rect x="869" y="355" width="56" height="5" fill="#c8cbd1"/>
+<text x="897" y="349" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10" font-weight="400" fill="#52514e" text-anchor="middle">2%</text>
+<text x="897" y="376" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">3–5</text>
+<rect x="951" y="354" width="56" height="6" fill="#c8cbd1"/>
+<text x="979" y="348" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10" font-weight="400" fill="#52514e" text-anchor="middle">3%</text>
+<text x="979" y="376" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">6+</text>
+<text x="815" y="392" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10.5" fill="#52514e" text-anchor="middle">primary studies shared between a pair of reviews (n = 231 pairs)</text>
+<text x="568" y="248" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10.5" fill="#52514e" text-anchor="middle" transform="rotate(-90 568 248)">% of review pairs</text>
+<text x="60" y="478" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="13.5" font-weight="700" fill="#0b0b0b">c  Evidence concentrated on leaf × regulating</text>
+<text x="228" y="496" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">Regulating</text>
+<text x="325" y="496" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">Material</text>
+<text x="422" y="496" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">Non-mat.</text>
+<text x="172" y="518" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#0b0b0b" text-anchor="end">Leaf</text>
+<rect x="180" y="502" width="95" height="25" fill="#2a78d6" stroke="#fff" stroke-width="1"/>
+<text x="228" y="518" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#ffffff" text-anchor="middle">1017</text>
+<rect x="277" y="502" width="95" height="25" fill="#79aae5" stroke="#fff" stroke-width="1"/>
+<text x="325" y="518" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#000000" text-anchor="middle">77</text>
+<rect x="373" y="502" width="95" height="25" fill="#a6c6ed" stroke="#fff" stroke-width="1"/>
+<text x="422" y="518" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#000000" text-anchor="middle">17</text>
+<text x="172" y="545" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#0b0b0b" text-anchor="end">Whole-plant</text>
+<rect x="180" y="529" width="95" height="25" fill="#5392dd" stroke="#fff" stroke-width="1"/>
+<text x="228" y="545" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#ffffff" text-anchor="middle">265</text>
+<rect x="277" y="529" width="95" height="25" fill="#7faee6" stroke="#fff" stroke-width="1"/>
+<text x="325" y="545" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#000000" text-anchor="middle">62</text>
+<rect x="373" y="529" width="95" height="25" fill="#99beeb" stroke="#fff" stroke-width="1"/>
+<text x="422" y="545" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#000000" text-anchor="middle">26</text>
+<text x="172" y="572" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#0b0b0b" text-anchor="end">Root</text>
+<rect x="180" y="556" width="95" height="25" fill="#478adb" stroke="#fff" stroke-width="1"/>
+<text x="228" y="572" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#ffffff" text-anchor="middle">393</text>
+<rect x="277" y="556" width="95" height="25" fill="#bbd4f1" stroke="#fff" stroke-width="1"/>
+<text x="325" y="572" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#000000" text-anchor="middle">8</text>
+<rect x="373" y="556" width="95" height="25" fill="#f6f5f0" stroke="#fff" stroke-width="1"/>
+<text x="172" y="599" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#0b0b0b" text-anchor="end">Stem</text>
+<rect x="180" y="583" width="95" height="25" fill="#71a5e3" stroke="#fff" stroke-width="1"/>
+<text x="228" y="599" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#000000" text-anchor="middle">100</text>
+<rect x="277" y="583" width="95" height="25" fill="#a9c8ee" stroke="#fff" stroke-width="1"/>
+<text x="325" y="599" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#000000" text-anchor="middle">15</text>
+<rect x="373" y="583" width="95" height="25" fill="#e9f1fa" stroke="#fff" stroke-width="1"/>
+<text x="422" y="599" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#000000" text-anchor="middle">1</text>
+<text x="172" y="626" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#0b0b0b" text-anchor="end">Flower</text>
+<rect x="180" y="610" width="95" height="25" fill="#669ee1" stroke="#fff" stroke-width="1"/>
+<text x="228" y="626" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#000000" text-anchor="middle">141</text>
+<rect x="277" y="610" width="95" height="25" fill="#bfd6f2" stroke="#fff" stroke-width="1"/>
+<text x="325" y="626" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#000000" text-anchor="middle">7</text>
+<rect x="373" y="610" width="95" height="25" fill="#adcbef" stroke="#fff" stroke-width="1"/>
+<text x="422" y="626" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#000000" text-anchor="middle">13</text>
+<text x="172" y="653" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#0b0b0b" text-anchor="end">Reprod.</text>
+<rect x="180" y="636" width="95" height="25" fill="#a2c4ed" stroke="#fff" stroke-width="1"/>
+<text x="228" y="653" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#000000" text-anchor="middle">19</text>
+<rect x="277" y="636" width="95" height="25" fill="#dde9f8" stroke="#fff" stroke-width="1"/>
+<text x="325" y="653" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#000000" text-anchor="middle">2</text>
+<rect x="373" y="636" width="95" height="25" fill="#e9f1fa" stroke="#fff" stroke-width="1"/>
+<text x="422" y="653" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#000000" text-anchor="middle">1</text>
+<text x="172" y="680" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#0b0b0b" text-anchor="end">Litter</text>
+<rect x="180" y="663" width="95" height="25" fill="#8fb8e9" stroke="#fff" stroke-width="1"/>
+<text x="228" y="680" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#000000" text-anchor="middle">37</text>
+<rect x="277" y="663" width="95" height="25" fill="#f6f5f0" stroke="#fff" stroke-width="1"/>
+<rect x="373" y="663" width="95" height="25" fill="#f6f5f0" stroke="#fff" stroke-width="1"/>
+<text x="172" y="707" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#0b0b0b" text-anchor="end">Life hist.</text>
+<rect x="180" y="690" width="95" height="25" fill="#dde9f8" stroke="#fff" stroke-width="1"/>
+<text x="228" y="707" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#000000" text-anchor="middle">2</text>
+<rect x="277" y="690" width="95" height="25" fill="#f6f5f0" stroke="#fff" stroke-width="1"/>
+<rect x="373" y="690" width="95" height="25" fill="#f6f5f0" stroke="#fff" stroke-width="1"/>
+<text x="325" y="747" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">colour = primary-study outcomes; many combinations have none</text>
+<text x="610" y="478" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="13.5" font-weight="700" fill="#0b0b0b">d  Many relationships rely on a single study</text>
 <line x1="610" y1="715" x2="1020" y2="715" stroke="#9a9a94" stroke-width="1.2"/>
 <line x1="610" y1="490" x2="610" y2="715" stroke="#9a9a94" stroke-width="1.2"/>
 <rect x="623" y="512" width="56" height="202" fill="#2a78d6"/>
@@ -145,9 +141,6 @@
 <rect x="951" y="660" width="56" height="55" fill="#c8cbd1"/>
 <text x="979" y="654" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10" font-weight="400" fill="#52514e" text-anchor="middle">11%</text>
 <text x="979" y="731" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">&gt;10</text>
-<text x="815" y="747" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10.5" fill="#52514e" text-anchor="middle">primary studies per trait–NCP relationship (n = 474)</text>
+<text x="815" y="747" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10.5" fill="#52514e" text-anchor="middle">primary-study outcomes per trait–NCP relationship (n = 474)</text>
 <text x="568" y="602" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10.5" fill="#52514e" text-anchor="middle" transform="rotate(-90 568 602)">% of relationships</text>
-<line x1="44" y1="768" x2="1036" y2="768" stroke="#ecebe5"/>
-<text x="44" y="790" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="12" font-weight="600" fill="#0b0b0b">The field is expanding fast without consolidating: reviews are low-quality (and no better over time), largely independent,</text>
-<text x="44" y="808" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="12" font-weight="600" fill="#0b0b0b">skewed toward leaf traits and regulating services, and — relationship by relationship — very thinly evidenced.</text>
 </svg>

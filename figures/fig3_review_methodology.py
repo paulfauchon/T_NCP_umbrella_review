@@ -15,8 +15,9 @@
 # ============================================================================
 import csv, os, sys, statistics as st
 from collections import defaultdict
-
 HERE = os.path.dirname(os.path.abspath(__file__))
+
+HERE = os.getcwd()
 ROOT = os.path.dirname(HERE) if os.path.basename(HERE) == "figures" else HERE
 DM   = os.path.join(ROOT, "data", "data_model.csv")
 META = os.path.join(ROOT, "data", "meta-data2.csv")
@@ -75,9 +76,9 @@ def bee(vals):
     return placed
 
 blocks = [
- ("Synthesis method",     ("Quantitative", lambda r: r["method"] == "vote"),     ("Narrative only", lambda r: r["method"] == "narrative"),  pval["method"]),
- ("Trait definitions",    ("Explicit",     lambda r: r["trait_def"] == "yes"),   ("None",           lambda r: r["trait_def"] == "no"),        pval["trait_def"]),
- ("Ecological framework", ("Explicit",     lambda r: r["eco"] == "yes"),         ("None",           lambda r: r["eco"] == "no"),              pval["eco"]),
+ ("a Synthesis method",     ("Quantitative", lambda r: r["method"] == "vote"),     ("Narrative only", lambda r: r["method"] == "narrative"),  pval["method"]),
+ ("b Trait definitions",    ("Explicit",     lambda r: r["trait_def"] == "yes"),   ("None",           lambda r: r["trait_def"] == "no"),        pval["trait_def"]),
+ ("c Ecological framework", ("Explicit",     lambda r: r["eco"] == "yes"),         ("None",           lambda r: r["eco"] == "no"),              pval["eco"]),
 ]
 H = top + len(blocks) * (blockH + blockGap) + 96
 def mean_of(sel): v = [r["pos"] for r in rows if sel(r)]; return st.mean(v), len(v), v
@@ -87,8 +88,8 @@ s = [f'<svg width="{W}" height="{H}" viewBox="0 0 {W} {H}" xmlns="http://www.w3.
      f'<text x="44" y="52" {F} font-size="23" font-weight="800" fill="{INK}">How a review is done predicts what it concludes</text>',
      f'<text x="44" y="80" {F} font-size="13.5" fill="{SUB}">Each dot is one systematic review, placed by the share of its directional evidence reported as positive.</text>',
      f'<text x="44" y="99" {F} font-size="13.5" fill="{SUB}">Reviews using less rigorous methods report systematically more positive trait–NCP relationships. Exploratory (n = {len(rows)}).</text>']
-s.append(f'<text x="{X(0.55):.0f}" y="{top-52}" {F} font-size="11" font-weight="700" fill="{BLUE}" text-anchor="middle">← more rigorous, less positive</text>')
-s.append(f'<text x="{X(0.93):.0f}" y="{top-52}" {F} font-size="11" font-weight="700" fill="{ORANGE}" text-anchor="middle">less rigorous, more positive →</text>')
+#s.append(f'<text x="{X(0.55):.0f}" y="{top-52}" {F} font-size="11" font-weight="700" fill="{BLUE}" text-anchor="middle">← more rigorous, less positive</text>')
+#s.append(f'<text x="{X(0.93):.0f}" y="{top-52}" {F} font-size="11" font-weight="700" fill="{ORANGE}" text-anchor="middle">less rigorous, more positive →</text>')
 for g in range(50, 101, 10):
     gx = X(g / 100); s.append(f'<line x1="{gx:.0f}" y1="{top-24}" x2="{gx:.0f}" y2="{H-70}" stroke="#f1f0eb"/>')
     s.append(f'<text x="{gx:.0f}" y="{top-30}" {F} font-size="9.5" fill="{SUB}" text-anchor="middle">{g}%</text>')
@@ -120,10 +121,32 @@ s.append(f'<text x="44" y="{H-32}" {F} font-size="12" font-weight="600" fill="{I
 s.append(f'<text x="44" y="{H-14}" {F} font-size="10.5" fill="{SUB}">p from a study-level mixed-effects model (2,203 outcomes; random review &amp; trait–NCP-pair effects). Recovery + data-rich-subset checks: Supplementary.</text>')
 s.append('</svg>')
 open(OUT, "w").write("\n".join(s))
+import subprocess
+
+
+png_file = OUT.replace(".svg", ".png")
+
+# Essayer d'abord avec CairoSVG
 try:
     import cairosvg
-    cairosvg.svg2png(url=OUT, write_to=OUT.replace(".svg", ".png"), output_width=1400)
-    png = " (+ PNG)"
-except Exception:
-    png = " (SVG only; pip install cairosvg for PNG)"
-print("wrote %s  [%d reviews]%s" % (OUT, len(rows), png))
+    cairosvg.svg2png(
+        url=OUT,
+        write_to=png_file,
+        output_width=1400
+    )
+    print("PNG créé :", png_file)
+
+except ImportError:
+    # Sinon, essayer Inkscape
+    inkscape = r"C:\Program Files\Inkscape\bin\inkscape.exe"
+
+    if os.path.exists(inkscape):
+        subprocess.run(
+            [inkscape, OUT, f"--export-filename={png_file}"],
+            check=True
+        )
+        print("PNG créé :", png_file)
+    else:
+        print("CairoSVG absent et Inkscape introuvable.")
+        
+

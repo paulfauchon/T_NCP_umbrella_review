@@ -105,3 +105,4 @@ if (!QUICK && file.exists(here::here("outputs", "fits", "fit_simple.rds"))) {
 message("\nDONE. Outputs in outputs/ (fits/, *.csv, fig_*_tradeoff.svg/png). ",
         if (QUICK) "QUICK run — set QUICK<-FALSE for the real analysis."
         else "Full run complete.")
+

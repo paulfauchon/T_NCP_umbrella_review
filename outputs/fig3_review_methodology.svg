@@ -1,128 +1,157 @@
-<svg width="1040" height="708" viewBox="0 0 1040 708" xmlns="http://www.w3.org/2000/svg">
-<rect width="1040" height="708" fill="#fcfcfb"/>
-<text x="44" y="52" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="23" font-weight="800" fill="#0b0b0b">How a review is done predicts what it concludes</text>
-<text x="44" y="80" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="13.5" fill="#52514e">Each dot is one systematic review, placed by the share of its directional evidence reported as positive.</text>
-<text x="44" y="99" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="13.5" fill="#52514e">Reviews using less rigorous methods report systematically more positive trait–NCP relationships. Exploratory (n = 21).</text>
-<text x="517" y="158" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="11" font-weight="700" fill="#2a78d6" text-anchor="middle">← more rigorous, less positive</text>
-<text x="874" y="158" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="11" font-weight="700" fill="#eb6834" text-anchor="middle">less rigorous, more positive →</text>
-<line x1="470" y1="186" x2="470" y2="638" stroke="#f1f0eb"/>
-<text x="470" y="180" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">50%</text>
-<line x1="564" y1="186" x2="564" y2="638" stroke="#f1f0eb"/>
-<text x="564" y="180" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">60%</text>
-<line x1="658" y1="186" x2="658" y2="638" stroke="#f1f0eb"/>
-<text x="658" y="180" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">70%</text>
-<line x1="752" y1="186" x2="752" y2="638" stroke="#f1f0eb"/>
-<text x="752" y="180" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">80%</text>
-<line x1="846" y1="186" x2="846" y2="638" stroke="#f1f0eb"/>
-<text x="846" y="180" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">90%</text>
-<line x1="940" y1="186" x2="940" y2="638" stroke="#f1f0eb"/>
-<text x="940" y="180" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" fill="#52514e" text-anchor="middle">100%</text>
-<text x="44" y="252" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="14" font-weight="700" fill="#0b0b0b">Synthesis method</text>
-<rect x="676.3" y="230.0" width="149.1" height="40.0" fill="#eb6834" opacity="0.06"/>
-<line x1="676.3" y1="250.0" x2="819.4" y2="250.0" stroke="#0b0b0b" stroke-width="1.5"/>
-<path d="M825.4,250.0 L816.4,246.0 L816.4,254.0 Z" fill="#0b0b0b"/>
-<text x="750.9" y="242.0" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="11" font-weight="700" fill="#0b0b0b" text-anchor="middle">+16 pts</text>
-<text x="750.9" y="266.0" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" font-weight="700" fill="#0b0b0b" text-anchor="middle">p = 0.06</text>
-<text x="454" y="229" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="11.5" fill="#0b0b0b" text-anchor="end">Quantitative</text>
-<text x="454" y="243" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#52514e" text-anchor="end">n=5</text>
-<circle cx="558.5" cy="230.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
-<circle cx="587.5" cy="230.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
-<circle cx="608.2" cy="230.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
-<circle cx="736.3" cy="230.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
-<circle cx="891.2" cy="230.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
-<path d="M676.3,222.0 L683.3,230.0 L676.3,238.0 L669.3,230.0 Z" fill="#2a78d6" stroke="#fff" stroke-width="1.4"/>
-<text x="676.3" y="217" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10.5" font-weight="700" fill="#2a78d6" text-anchor="middle">72%</text>
-<text x="454" y="269" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="11.5" fill="#0b0b0b" text-anchor="end">Narrative only</text>
-<text x="454" y="283" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#52514e" text-anchor="end">n=16</text>
-<circle cx="590.9" cy="270.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="637.9" cy="270.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="671.4" cy="270.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="690.3" cy="270.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="714.4" cy="270.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="776.5" cy="270.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="839.3" cy="270.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="846.0" cy="281.6" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="897.3" cy="270.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="902.4" cy="281.6" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="940.0" cy="270.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="940.0" cy="281.6" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="940.0" cy="258.4" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="940.0" cy="293.2" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="940.0" cy="246.8" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="940.0" cy="304.8" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<path d="M825.4,262.0 L832.4,270.0 L825.4,278.0 L818.4,270.0 Z" fill="#eb6834" stroke="#fff" stroke-width="1.4"/>
-<text x="825.4" y="290" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10.5" font-weight="700" fill="#eb6834" text-anchor="middle">88%</text>
-<text x="44" y="386" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="14" font-weight="700" fill="#0b0b0b">Trait definitions</text>
-<rect x="689.3" y="364.0" width="124.2" height="40.0" fill="#eb6834" opacity="0.06"/>
-<line x1="689.3" y1="384.0" x2="807.6" y2="384.0" stroke="#0b0b0b" stroke-width="1.5"/>
-<path d="M813.6,384.0 L804.6,380.0 L804.6,388.0 Z" fill="#0b0b0b"/>
-<text x="751.5" y="376.0" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="11" font-weight="700" fill="#0b0b0b" text-anchor="middle">+13 pts</text>
-<text x="751.5" y="400.0" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" font-weight="700" fill="#0b0b0b" text-anchor="middle">p = 0.03</text>
-<text x="454" y="363" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="11.5" fill="#0b0b0b" text-anchor="end">Explicit</text>
-<text x="454" y="377" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#52514e" text-anchor="end">n=4</text>
-<circle cx="558.5" cy="364.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
-<circle cx="587.5" cy="364.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
-<circle cx="671.4" cy="364.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
-<circle cx="940.0" cy="364.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
-<path d="M689.3,356.0 L696.3,364.0 L689.3,372.0 L682.3,364.0 Z" fill="#2a78d6" stroke="#fff" stroke-width="1.4"/>
-<text x="689.3" y="351" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10.5" font-weight="700" fill="#2a78d6" text-anchor="middle">73%</text>
-<text x="454" y="403" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="11.5" fill="#0b0b0b" text-anchor="end">None</text>
-<text x="454" y="417" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#52514e" text-anchor="end">n=17</text>
-<circle cx="590.9" cy="404.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="608.2" cy="404.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="637.9" cy="404.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="690.3" cy="404.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="714.4" cy="404.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="736.3" cy="404.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="776.5" cy="404.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="839.3" cy="404.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="846.0" cy="415.6" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="891.2" cy="404.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="897.3" cy="415.6" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="902.4" cy="404.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="940.0" cy="404.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="940.0" cy="415.6" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="940.0" cy="392.4" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="940.0" cy="427.2" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="940.0" cy="380.8" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<path d="M813.6,396.0 L820.6,404.0 L813.6,412.0 L806.6,404.0 Z" fill="#eb6834" stroke="#fff" stroke-width="1.4"/>
-<text x="813.6" y="424" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10.5" font-weight="700" fill="#eb6834" text-anchor="middle">87%</text>
-<text x="44" y="520" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="14" font-weight="700" fill="#0b0b0b">Ecological framework</text>
-<rect x="767.9" y="498.0" width="42.1" height="40.0" fill="#eb6834" opacity="0.06"/>
-<line x1="767.9" y1="518.0" x2="803.9" y2="518.0" stroke="#0b0b0b" stroke-width="1.5"/>
-<path d="M809.9,518.0 L800.9,514.0 L800.9,522.0 Z" fill="#0b0b0b"/>
-<text x="788.9" y="510.0" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="11" font-weight="700" fill="#0b0b0b" text-anchor="middle">+4 pts</text>
-<text x="788.9" y="534.0" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="9.5" font-weight="700" fill="#8a8f98" text-anchor="middle">n.s.</text>
-<text x="454" y="497" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="11.5" fill="#0b0b0b" text-anchor="end">Explicit</text>
-<text x="454" y="511" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#52514e" text-anchor="end">n=10</text>
-<circle cx="558.5" cy="498.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
-<circle cx="587.5" cy="498.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
-<circle cx="590.9" cy="509.6" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
-<circle cx="608.2" cy="498.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
-<circle cx="776.5" cy="498.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
-<circle cx="846.0" cy="498.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
-<circle cx="891.2" cy="498.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
-<circle cx="940.0" cy="498.0" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
-<circle cx="940.0" cy="509.6" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
-<circle cx="940.0" cy="486.4" r="5.2" fill="#2a78d6" fill-opacity="0.5" stroke="#2a78d6" stroke-width="0.8"/>
-<path d="M767.9,490.0 L774.9,498.0 L767.9,506.0 L760.9,498.0 Z" fill="#2a78d6" stroke="#fff" stroke-width="1.4"/>
-<text x="767.9" y="485" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10.5" font-weight="700" fill="#2a78d6" text-anchor="middle">82%</text>
-<text x="454" y="537" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="11.5" fill="#0b0b0b" text-anchor="end">None</text>
-<text x="454" y="551" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="8.5" fill="#52514e" text-anchor="end">n=11</text>
-<circle cx="637.9" cy="538.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="671.4" cy="538.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="690.3" cy="538.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="714.4" cy="538.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="736.3" cy="538.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="839.3" cy="538.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="897.3" cy="538.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="902.4" cy="549.6" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="940.0" cy="538.0" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="940.0" cy="549.6" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<circle cx="940.0" cy="526.4" r="5.2" fill="#eb6834" fill-opacity="0.5" stroke="#eb6834" stroke-width="0.8"/>
-<path d="M809.9,530.0 L816.9,538.0 L809.9,546.0 L802.9,538.0 Z" fill="#eb6834" stroke="#fff" stroke-width="1.4"/>
-<text x="809.9" y="558" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10.5" font-weight="700" fill="#eb6834" text-anchor="middle">86%</text>
-<text x="705" y="656" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10.5" fill="#52514e" text-anchor="middle">Share of a review’s directional evidence reported as positive (mean ◆ per group)</text>
-<text x="44" y="676" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="12" font-weight="600" fill="#0b0b0b">The between-review differences track how evidence is synthesised — not the ecosystem studied (biome ≈ 10%).</text>
-<text x="44" y="694" font-family='system-ui,-apple-system,"Segoe UI",sans-serif' font-size="10.5" fill="#52514e">p from a study-level mixed-effects model (2,203 outcomes; random review &amp; trait–NCP-pair effects). Recovery + data-rich-subset checks: Supplementary.</text>
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='792.00pt' height='576.00pt' viewBox='0 0 792.00 576.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FCFCFB;'/>
+<defs>
+  <clipPath id='cpMC4wMHw3OTIuMDB8MC4wMHw1NzYuMDA='>
+    <rect x='0.00' y='0.00' width='792.00' height='576.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw3OTIuMDB8MC4wMHw1NzYuMDA=)'>
+<rect x='0.00' y='0.00' width='792.00' height='576.00' style='stroke-width: 0.00; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMjMuOTF8NzY4LjA5fDI0LjI3fDU2Mi4wNQ=='>
+    <rect x='23.91' y='24.27' width='744.18' height='537.78' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjMuOTF8NzY4LjA5fDI0LjI3fDU2Mi4wNQ==)'>
+<line x1='283.25' y1='562.05' x2='283.25' y2='24.27' style='stroke-width: 1.07; stroke: #F1F0EB; stroke-linecap: butt;' />
+<line x1='369.98' y1='562.05' x2='369.98' y2='24.27' style='stroke-width: 1.07; stroke: #F1F0EB; stroke-linecap: butt;' />
+<line x1='456.71' y1='562.05' x2='456.71' y2='24.27' style='stroke-width: 1.07; stroke: #F1F0EB; stroke-linecap: butt;' />
+<line x1='543.45' y1='562.05' x2='543.45' y2='24.27' style='stroke-width: 1.07; stroke: #F1F0EB; stroke-linecap: butt;' />
+<line x1='630.18' y1='562.05' x2='630.18' y2='24.27' style='stroke-width: 1.07; stroke: #F1F0EB; stroke-linecap: butt;' />
+<line x1='716.92' y1='562.05' x2='716.92' y2='24.27' style='stroke-width: 1.07; stroke: #F1F0EB; stroke-linecap: butt;' />
+<rect x='473.64' y='73.16' width='137.53' height='81.48' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #EB6834; fill-opacity: 0.059;' />
+<rect x='485.64' y='236.12' width='114.62' height='81.48' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #EB6834; fill-opacity: 0.059;' />
+<rect x='558.10' y='399.09' width='38.81' height='81.48' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #EB6834; fill-opacity: 0.059;' />
+<circle cx='364.88' cy='91.09' r='2.67' style='stroke-width: 0.43; stroke: #2A78D6; stroke-opacity: 0.50; fill: #2A78D6; fill-opacity: 0.50;' />
+<circle cx='391.66' cy='91.09' r='2.67' style='stroke-width: 0.43; stroke: #2A78D6; stroke-opacity: 0.50; fill: #2A78D6; fill-opacity: 0.50;' />
+<circle cx='410.80' cy='91.09' r='2.67' style='stroke-width: 0.43; stroke: #2A78D6; stroke-opacity: 0.50; fill: #2A78D6; fill-opacity: 0.50;' />
+<circle cx='528.99' cy='91.09' r='2.67' style='stroke-width: 0.43; stroke: #2A78D6; stroke-opacity: 0.50; fill: #2A78D6; fill-opacity: 0.50;' />
+<circle cx='671.86' cy='91.09' r='2.67' style='stroke-width: 0.43; stroke: #2A78D6; stroke-opacity: 0.50; fill: #2A78D6; fill-opacity: 0.50;' />
+<circle cx='394.76' cy='172.57' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='438.13' cy='172.57' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='469.10' cy='172.57' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='486.53' cy='172.57' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='508.75' cy='172.57' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='566.07' cy='172.57' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='623.99' cy='172.57' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='630.18' cy='163.60' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='677.49' cy='172.57' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='682.22' cy='163.60' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='716.92' cy='172.57' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='716.92' cy='163.60' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='716.92' cy='154.64' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='716.92' cy='145.68' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='716.92' cy='136.72' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='716.92' cy='172.57' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='364.88' cy='254.05' r='2.67' style='stroke-width: 0.43; stroke: #2A78D6; stroke-opacity: 0.50; fill: #2A78D6; fill-opacity: 0.50;' />
+<circle cx='391.66' cy='254.05' r='2.67' style='stroke-width: 0.43; stroke: #2A78D6; stroke-opacity: 0.50; fill: #2A78D6; fill-opacity: 0.50;' />
+<circle cx='469.10' cy='254.05' r='2.67' style='stroke-width: 0.43; stroke: #2A78D6; stroke-opacity: 0.50; fill: #2A78D6; fill-opacity: 0.50;' />
+<circle cx='716.92' cy='254.05' r='2.67' style='stroke-width: 0.43; stroke: #2A78D6; stroke-opacity: 0.50; fill: #2A78D6; fill-opacity: 0.50;' />
+<circle cx='394.76' cy='335.53' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='410.80' cy='335.53' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='438.13' cy='335.53' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='486.53' cy='335.53' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='508.75' cy='335.53' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='528.99' cy='335.53' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='566.07' cy='335.53' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='623.99' cy='335.53' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='630.18' cy='326.57' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='671.86' cy='335.53' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='677.49' cy='335.53' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='682.22' cy='326.57' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='716.92' cy='335.53' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='716.92' cy='326.57' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='716.92' cy='317.61' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='716.92' cy='308.64' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='716.92' cy='299.68' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='364.88' cy='417.01' r='2.67' style='stroke-width: 0.43; stroke: #2A78D6; stroke-opacity: 0.50; fill: #2A78D6; fill-opacity: 0.50;' />
+<circle cx='391.66' cy='417.01' r='2.67' style='stroke-width: 0.43; stroke: #2A78D6; stroke-opacity: 0.50; fill: #2A78D6; fill-opacity: 0.50;' />
+<circle cx='394.76' cy='408.05' r='2.67' style='stroke-width: 0.43; stroke: #2A78D6; stroke-opacity: 0.50; fill: #2A78D6; fill-opacity: 0.50;' />
+<circle cx='410.80' cy='417.01' r='2.67' style='stroke-width: 0.43; stroke: #2A78D6; stroke-opacity: 0.50; fill: #2A78D6; fill-opacity: 0.50;' />
+<circle cx='566.07' cy='417.01' r='2.67' style='stroke-width: 0.43; stroke: #2A78D6; stroke-opacity: 0.50; fill: #2A78D6; fill-opacity: 0.50;' />
+<circle cx='630.18' cy='417.01' r='2.67' style='stroke-width: 0.43; stroke: #2A78D6; stroke-opacity: 0.50; fill: #2A78D6; fill-opacity: 0.50;' />
+<circle cx='671.86' cy='417.01' r='2.67' style='stroke-width: 0.43; stroke: #2A78D6; stroke-opacity: 0.50; fill: #2A78D6; fill-opacity: 0.50;' />
+<circle cx='716.92' cy='417.01' r='2.67' style='stroke-width: 0.43; stroke: #2A78D6; stroke-opacity: 0.50; fill: #2A78D6; fill-opacity: 0.50;' />
+<circle cx='716.92' cy='408.05' r='2.67' style='stroke-width: 0.43; stroke: #2A78D6; stroke-opacity: 0.50; fill: #2A78D6; fill-opacity: 0.50;' />
+<circle cx='716.92' cy='399.09' r='2.67' style='stroke-width: 0.43; stroke: #2A78D6; stroke-opacity: 0.50; fill: #2A78D6; fill-opacity: 0.50;' />
+<circle cx='438.13' cy='498.50' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='469.10' cy='498.50' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='486.53' cy='498.50' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='508.75' cy='498.50' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='528.99' cy='498.50' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='623.99' cy='498.50' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='677.49' cy='498.50' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='682.22' cy='489.53' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='716.92' cy='498.50' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='716.92' cy='489.53' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<circle cx='716.92' cy='480.57' r='2.67' style='stroke-width: 0.43; stroke: #EB6834; stroke-opacity: 0.50; fill: #EB6834; fill-opacity: 0.50;' />
+<line x1='473.64' y1='113.90' x2='611.17' y2='113.90' style='stroke-width: 1.49; stroke: #0B0B0B; stroke-linecap: butt;' />
+<polygon points='605.99,116.89 611.17,113.90 605.99,110.91 ' style='stroke-width: 1.49; stroke: #0B0B0B; stroke-linecap: butt; fill: #0B0B0B;' />
+<line x1='485.64' y1='276.87' x2='600.26' y2='276.87' style='stroke-width: 1.49; stroke: #0B0B0B; stroke-linecap: butt;' />
+<polygon points='595.08,279.85 600.26,276.87 595.08,273.88 ' style='stroke-width: 1.49; stroke: #0B0B0B; stroke-linecap: butt; fill: #0B0B0B;' />
+<line x1='558.10' y1='439.83' x2='596.91' y2='439.83' style='stroke-width: 1.49; stroke: #0B0B0B; stroke-linecap: butt;' />
+<polygon points='591.73,442.82 596.91,439.83 591.73,436.84 ' style='stroke-width: 1.49; stroke: #0B0B0B; stroke-linecap: butt; fill: #0B0B0B;' />
+<text x='542.40' y='92.81' text-anchor='middle' style='font-size: 9.39px; font-weight: bold;fill: #0B0B0B; font-family: "Arial";' textLength='32.59px' lengthAdjust='spacingAndGlyphs'>+16 pts</text>
+<text x='542.95' y='255.78' text-anchor='middle' style='font-size: 9.39px; font-weight: bold;fill: #0B0B0B; font-family: "Arial";' textLength='32.59px' lengthAdjust='spacingAndGlyphs'>+13 pts</text>
+<text x='577.50' y='418.74' text-anchor='middle' style='font-size: 9.39px; font-weight: bold;fill: #0B0B0B; font-family: "Arial";' textLength='27.38px' lengthAdjust='spacingAndGlyphs'>+4 pts</text>
+<text x='542.40' y='141.40' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #0B0B0B; font-family: "Arial";' textLength='31.58px' lengthAdjust='spacingAndGlyphs'>p = 0.06</text>
+<text x='542.95' y='304.37' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #0B0B0B; font-family: "Arial";' textLength='31.58px' lengthAdjust='spacingAndGlyphs'>p = 0.03</text>
+<text x='577.50' y='467.33' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #0B0B0B; font-family: "Arial";' textLength='14.72px' lengthAdjust='spacingAndGlyphs'>n.s.</text>
+<polygon points='473.64,78.42 478.90,73.16 473.64,67.90 468.38,73.16 ' style='stroke-width: 1.13; stroke: #FFFFFF; fill: #2A78D6;' />
+<polygon points='611.17,159.90 616.43,154.64 611.17,149.38 605.91,154.64 ' style='stroke-width: 1.13; stroke: #FFFFFF; fill: #EB6834;' />
+<polygon points='485.64,241.38 490.90,236.12 485.64,230.87 480.38,236.12 ' style='stroke-width: 1.13; stroke: #FFFFFF; fill: #2A78D6;' />
+<polygon points='600.26,322.86 605.51,317.61 600.26,312.35 595.00,317.61 ' style='stroke-width: 1.13; stroke: #FFFFFF; fill: #EB6834;' />
+<polygon points='558.10,404.35 563.35,399.09 558.10,393.83 552.84,399.09 ' style='stroke-width: 1.13; stroke: #FFFFFF; fill: #2A78D6;' />
+<polygon points='596.91,485.83 602.16,480.57 596.91,475.31 591.65,480.57 ' style='stroke-width: 1.13; stroke: #FFFFFF; fill: #EB6834;' />
+<text x='611.17' y='190.39' text-anchor='middle' style='font-size: 8.82px; font-weight: bold;fill: #EB6834; font-family: "Arial";' textLength='17.64px' lengthAdjust='spacingAndGlyphs'>88%</text>
+<text x='485.64' y='211.57' text-anchor='middle' style='font-size: 8.82px; font-weight: bold;fill: #2A78D6; font-family: "Arial";' textLength='17.64px' lengthAdjust='spacingAndGlyphs'>73%</text>
+<text x='600.26' y='353.35' text-anchor='middle' style='font-size: 8.82px; font-weight: bold;fill: #EB6834; font-family: "Arial";' textLength='17.64px' lengthAdjust='spacingAndGlyphs'>87%</text>
+<text x='558.10' y='374.54' text-anchor='middle' style='font-size: 8.82px; font-weight: bold;fill: #2A78D6; font-family: "Arial";' textLength='17.64px' lengthAdjust='spacingAndGlyphs'>82%</text>
+<text x='596.91' y='516.32' text-anchor='middle' style='font-size: 8.82px; font-weight: bold;fill: #EB6834; font-family: "Arial";' textLength='17.64px' lengthAdjust='spacingAndGlyphs'>86%</text>
+<text x='270.24' y='76.62' text-anchor='end' style='font-size: 9.67px;fill: #0B0B0B; font-family: "Arial";' textLength='51.61px' lengthAdjust='spacingAndGlyphs'>Quantitative</text>
+<text x='270.24' y='158.11' text-anchor='end' style='font-size: 9.67px;fill: #0B0B0B; font-family: "Arial";' textLength='59.67px' lengthAdjust='spacingAndGlyphs'>Narrative only</text>
+<text x='270.24' y='239.59' text-anchor='end' style='font-size: 9.67px;fill: #0B0B0B; font-family: "Arial";' textLength='30.67px' lengthAdjust='spacingAndGlyphs'>Explicit</text>
+<text x='270.24' y='321.07' text-anchor='end' style='font-size: 9.67px;fill: #0B0B0B; font-family: "Arial";' textLength='23.11px' lengthAdjust='spacingAndGlyphs'>None</text>
+<text x='270.24' y='402.55' text-anchor='end' style='font-size: 9.67px;fill: #0B0B0B; font-family: "Arial";' textLength='30.67px' lengthAdjust='spacingAndGlyphs'>Explicit</text>
+<text x='270.24' y='484.03' text-anchor='end' style='font-size: 9.67px;fill: #0B0B0B; font-family: "Arial";' textLength='23.11px' lengthAdjust='spacingAndGlyphs'>None</text>
+<text x='270.24' y='96.89' text-anchor='end' style='font-size: 7.11px;fill: #52514E; font-family: "Arial";' textLength='12.06px' lengthAdjust='spacingAndGlyphs'>n=5</text>
+<text x='270.24' y='178.37' text-anchor='end' style='font-size: 7.11px;fill: #52514E; font-family: "Arial";' textLength='16.02px' lengthAdjust='spacingAndGlyphs'>n=16</text>
+<text x='270.24' y='259.85' text-anchor='end' style='font-size: 7.11px;fill: #52514E; font-family: "Arial";' textLength='12.06px' lengthAdjust='spacingAndGlyphs'>n=4</text>
+<text x='270.24' y='341.34' text-anchor='end' style='font-size: 7.11px;fill: #52514E; font-family: "Arial";' textLength='16.02px' lengthAdjust='spacingAndGlyphs'>n=17</text>
+<text x='270.24' y='422.82' text-anchor='end' style='font-size: 7.11px;fill: #52514E; font-family: "Arial";' textLength='16.02px' lengthAdjust='spacingAndGlyphs'>n=10</text>
+<text x='270.24' y='504.30' text-anchor='end' style='font-size: 7.11px;fill: #52514E; font-family: "Arial";' textLength='15.48px' lengthAdjust='spacingAndGlyphs'>n=11</text>
+<text x='83.76' y='117.97' style='font-size: 11.38px; font-weight: bold;fill: #0B0B0B; font-family: "Arial";' textLength='107.47px' lengthAdjust='spacingAndGlyphs'>a Synthesis method</text>
+<text x='83.76' y='280.94' style='font-size: 11.38px; font-weight: bold;fill: #0B0B0B; font-family: "Arial";' textLength='94.78px' lengthAdjust='spacingAndGlyphs'>b Trait definitions</text>
+<text x='83.76' y='443.90' style='font-size: 11.38px; font-weight: bold;fill: #0B0B0B; font-family: "Arial";' textLength='127.06px' lengthAdjust='spacingAndGlyphs'>c Ecological framework</text>
+</g>
+<g clip-path='url(#cpMC4wMHw3OTIuMDB8MC4wMHw1NzYuMDA=)'>
+<text x='283.25' y='23.33' text-anchor='middle' style='font-size: 9.00px;fill: #52514E; font-family: "Arial";' textLength='18.00px' lengthAdjust='spacingAndGlyphs'>50%</text>
+<text x='369.98' y='23.33' text-anchor='middle' style='font-size: 9.00px;fill: #52514E; font-family: "Arial";' textLength='18.00px' lengthAdjust='spacingAndGlyphs'>60%</text>
+<text x='456.71' y='23.33' text-anchor='middle' style='font-size: 9.00px;fill: #52514E; font-family: "Arial";' textLength='18.00px' lengthAdjust='spacingAndGlyphs'>70%</text>
+<text x='543.45' y='23.33' text-anchor='middle' style='font-size: 9.00px;fill: #52514E; font-family: "Arial";' textLength='18.00px' lengthAdjust='spacingAndGlyphs'>80%</text>
+<text x='630.18' y='23.33' text-anchor='middle' style='font-size: 9.00px;fill: #52514E; font-family: "Arial";' textLength='18.00px' lengthAdjust='spacingAndGlyphs'>90%</text>
+<text x='716.92' y='23.33' text-anchor='middle' style='font-size: 9.00px;fill: #52514E; font-family: "Arial";' textLength='23.00px' lengthAdjust='spacingAndGlyphs'>100%</text>
+</g>
+</g>
 </svg>
