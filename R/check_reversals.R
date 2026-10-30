@@ -3,8 +3,8 @@
 #                        cross-NCP borrowing through the trait/service means?
 #
 #  For every pair, compares the posterior direction under:
-#    * qp     (full model: trait + service means -> borrowing across NCPs)
-#    * simple (pair-only : NO trait/service means -> NO borrowing)
+#   * qp        (trait + NCP means + quality precision -> borrowing across NCPs)
+#   * simple (pair-only + quality precision -> NO cross-NCP borrowing)
 #  A reversal/deflation that PERSISTS in `simple` is data-driven (real). One that
 #  DISAPPEARS in `simple` was produced by the trait main effect dragging the pair
 #  toward the trait's behaviour on other NCPs (borrowing artefact) — those must
@@ -13,6 +13,8 @@
 #  STANDALONE: needs outputs/fits/fit_qp.rds and fit_simple.rds.
 #     Rscript -e 'source("R/check_reversals.R")'
 #  OUTPUT  outputs/reversal_check.csv
+#
+#  ADDED: test for positivity bias
 # ============================================================================
 
 source(here::here("R", "00_config.R"))
@@ -69,3 +71,144 @@ cat("\nSaved outputs/reversal_check.csv (all pairs).\n")
 cat("\nUse in the main figure: keep only departures marked REAL; drop or caveat\n",
     "the BORROWING ARTEFACT ones (they reflect the trait mean, not the pair's data).\n",
     sep = "")
+
+#% of same direction relationships between reviews that shared a pair
+
+# Direction of each review's relationship within each pair
+review_directions <- dm %>%
+  group_by(ts_id, source_id) %>%
+  summarise(
+    npos = sum(Npos, na.rm = TRUE),
+    nneg = sum(Nneg, na.rm = TRUE),
+    direction = case_when(
+      npos > nneg ~ "positive",
+      nneg > npos ~ "negative",
+      TRUE        ~ "tie"
+    ),
+    .groups = "drop"
+  )
+
+review_agreement <- review_directions %>%
+  filter(direction != "tie") %>%
+  group_by(ts_id) %>%
+  summarise(
+    n_directional_reviews = n(),
+    n_review_comparisons = choose(n(), 2),
+    n_same_direction = if (n() < 2) {
+      0L
+    } else {
+      sum(combn(
+        direction, 2,
+        FUN = function(x) x[1] == x[2]
+      ))
+    },
+    pct_same_direction = if (n_review_comparisons > 0) {
+      100 * n_same_direction / n_review_comparisons
+    } else {
+      NA_real_
+    },
+    .groups = "drop"
+  )
+
+# Overall percentage across all comparable review pairs
+overall_agreement <- review_agreement %>%
+  summarise(
+    total_review_pairs = sum(n_review_comparisons),
+    total_same_direction = sum(n_same_direction),
+    pct_same_direction = if (total_review_pairs > 0) {
+      100 * total_same_direction / total_review_pairs
+    } else {
+      NA_real_
+    }
+  )
+
+print(overall_agreement)
+
+
+perfect_agreement <- review_agreement %>%
+  filter(n_review_comparisons > 0) %>%
+  summarise(
+    n_shared_relationships = n(),
+    n_perfect_agreement = sum(n_same_direction == n_review_comparisons),
+    pct_perfect_agreement = 100 * n_perfect_agreement / n_shared_relationships
+  )
+
+print(perfect_agreement)
+
+#test for positivity bias
+
+names(dm)
+dplyr::glimpse(dm)
+
+dm %>%
+  summarise(
+    n_rows = n(),
+    n_relationships = n_distinct(ts_id),
+    n_reviews = n_distinct(source_id),
+    total_ntot = sum(ntot, na.rm = TRUE),
+    total_positive = sum(Npos, na.rm = TRUE),
+    total_negative = sum(Nneg, na.rm = TRUE)
+  )
+
+dm %>%
+  count(ts_id, source_id) %>%
+  filter(n > 1)
+
+library(dplyr)
+library(ggplot2)
+library(scales)
+
+relationship_trend <- dm %>%
+  group_by(ts_id, trait_grouped, ncp) %>%
+  summarise(
+    n_studies = sum(ntot, na.rm = TRUE),
+    n_positive = sum(Npos, na.rm = TRUE),
+    n_negative = sum(Nneg, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    n_directional = n_positive + n_negative,
+    prop_positive = if_else(
+      n_directional > 0,
+      n_positive / n_directional,
+      NA_real_
+    ),
+    relationship = paste(trait_grouped, ncp, sep = " – ")
+  ) %>%
+  filter(
+    n_studies > 0,
+    n_directional > 0
+  )
+
+p <- ggplot(
+  relationship_trend,
+  aes(x = n_studies, y = prop_positive)
+) +
+  geom_point(alpha = 0.65, size = 2) +
+  geom_smooth(
+    method = "loess",
+    formula = y ~ x,
+    se = TRUE
+  ) +
+  scale_y_continuous(
+    limits = c(0, 1),
+    labels = label_percent()
+  ) +
+  scale_x_log10() +
+  labs(
+    x = "Number of studies or outcomes per trait–NCP relationship",
+    y = "Proportion of positive directional outcomes"
+  ) +
+  theme_classic()
+
+p
+
+m_trend <- glm(
+  cbind(n_positive, n_negative) ~ log(n_studies),
+  family = binomial(),
+  data = relationship_trend
+)
+
+summary(m_trend)
+confint(m_trend)
+

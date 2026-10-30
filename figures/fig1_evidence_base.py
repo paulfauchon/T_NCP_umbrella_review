@@ -12,6 +12,8 @@
 #          data/sigma.csv
 #  OUTPUT  outputs/fig1_evidence_base.svg (+ .png if cairosvg installed)
 #  RUN     python3 figures/fig1_evidence_base.py
+#
+#  ADDED:  4 seperate figures for poster presentation (see below)
 # ============================================================================
 import csv, os, sys, math, statistics as st
 from collections import defaultdict
@@ -83,7 +85,7 @@ def axes(x, y, w, h):
 
 # ---- a) quality vs year (OLS + 95% CI band) ----
 x0, y0 = PX[0], PY[0]
-s.append(f'<text x="{x0}" y="{y0-12}" {F} font-size="13.5" font-weight="700" fill="{INK}">a  Booming, but not getting more rigorous</text>')
+s.append(f'<text x="{x0}" y="{y0-12}" {F} font-size="13.5" font-weight="700" fill="{INK}">a Reviews are not becoming more rigorous</text>')
 yrs = [a for a, b in qy]
 axes(x0, y0, PW, PH)
 ax = lambda v: x0 + PW * (v - 2017) / 7
@@ -135,7 +137,7 @@ s.append(f'<text x="{x0-42}" y="{y0+PH/2:.0f}" {F} font-size="10.5" fill="{SUB}"
 
 # ---- b) redundancy ----
 x0, y0 = PX[1], PY[0]
-s.append(f'<text x="{x0}" y="{y0-12}" {F} font-size="13.5" font-weight="700" fill="{INK}">b  Reviews are largely independent</text>')
+s.append(f'<text x="{x0}" y="{y0-12}" {F} font-size="13.5" font-weight="700" fill="{INK}">b  Few primary studies are shared between reviews</text>')
 axes(x0, y0, PW, PH); order = ["0", "1", "2", "3–5", "6+"]; mxs = max(sb.values()); bw = PW / len(order)
 for i, k in enumerate(order):
     v = sb[k]; bh = 0.9 * PH * v / mxs; col = BLUE if k == "0" else MUTE
@@ -147,13 +149,13 @@ s.append(f'<text x="{x0-42}" y="{y0+PH/2:.0f}" {F} font-size="10.5" fill="{SUB}"
 #s.append(f'<text x="{x0+PW-6:.0f}" y="{y0+16}" {F} font-size="10" font-weight="700" fill="{BLUE}" text-anchor="end">{round(100*sb["0"]/SPAIRS)}% share none · 10.7% CCA (overall redundancy)</text>')
 
 # ---- c) coverage heatmap ----
-x0, y0 = PX[0], PY[1]
-s.append(f'<text x="{x0}" y="{y0-12}" {F} font-size="13.5" font-weight="700" fill="{INK}">c  Evidence concentrated on leaf × regulating</text>')
+x0, y0 = PX[0], PY[1]+12
+s.append(f'<text x="{x0}" y="{y0-24}" {F} font-size="13.5" font-weight="700" fill="{INK}">c  Evidence concentrated on leaf × regulating</text>')
 olab = {"leaf":"Leaf","whole plant":"Whole-plant","root":"Root","stem":"Stem","flower":"Flower","reproductive":"Reprod.","litter":"Litter","life history":"Life hist."}
 clab = {"regulation":"Regulating","material":"Material","non-material":"Non-mat."}
-maxv = max(cov.values()); cw = (PW - 120) / len(cats); ch = PH / len(organs); gx0 = x0 + 120
+maxv = max(cov.values()); cw = (PW - 120) / len(cats); ch = (PH-10) / len(organs); gx0 = x0 + 120
 for j, cat in enumerate(cats):
-    s.append(f'<text x="{gx0+j*cw+cw/2:.0f}" y="{y0-2}" {F} font-size="9.5" fill="{SUB}" text-anchor="middle">{clab[cat]}</text>')
+    s.append(f'<text x="{gx0+j*cw+cw/2:.0f}" y="{y0-6}" {F} font-size="9.5" fill="{SUB}" text-anchor="middle">{clab[cat]}</text>')
 for i, o in enumerate(organs):
     s.append(f'<text x="{gx0-8}" y="{y0+i*ch+ch/2+3:.0f}" {F} font-size="9.5" fill="{INK}" text-anchor="end">{olab[o]}</text>')
     for j, cat in enumerate(cats):
@@ -162,22 +164,23 @@ for i, o in enumerate(organs):
         cx, cy = gx0 + j * cw, y0 + i * ch
         s.append(f'<rect x="{cx:.0f}" y="{cy:.0f}" width="{cw-2:.0f}" height="{ch-2:.0f}" fill="{col}" stroke="#fff" stroke-width="1"/>')
         if v > 0:
-            s.append(f'<text x="{cx+cw/2:.0f}" y="{cy+ch/2+3:.0f}" {F} font-size="8.5" fill="{"#fff" if t>0.5 else "#52514e"}" text-anchor="middle">{int(v)}</text>')
-s.append(f'<text x="{gx0+(PW-120)/2:.0f}" y="{y0+PH+16}" {F} font-size="9.5" fill="{SUB}" text-anchor="middle">colour = primary studies; many combinations have none</text>')
+            text_col = "#ffffff" if t > 0.75 else "#000000"
+            s.append(f'<text x="{cx+cw/2:.0f}" y="{cy+ch/2+3:.0f}" {F} font-size="8.5" fill="{text_col}" text-anchor="middle">{int(v)}</text>')
+s.append(f'<text x="{gx0+(PW-120)/2:.0f}" y="{y0+PH+20}" {F} font-size="9.5" fill="{SUB}" text-anchor="middle">colour = primary-study outcomes; many combinations have none</text>')
 
 # ---- d) depth ----
 x0, y0 = PX[1], PY[1]
-s.append(f'<text x="{x0}" y="{y0-12}" {F} font-size="13.5" font-weight="700" fill="{INK}">d  Most relationships rest on a single study</text>')
+s.append(f'<text x="{x0}" y="{y0-12}" {F} font-size="13.5" font-weight="700" fill="{INK}">d  Many relationships rely on a single study</text>')
 axes(x0, y0, PW, PH); o2 = ["1", "2", "3–5", "6–10", ">10"]; mx2 = max(db.values()); bw = PW / len(o2)
 for i, k in enumerate(o2):
     v = db[k]; bh = 0.9 * PH * v / mx2; col = BLUE if k == "1" else MUTE
     s.append(f'<rect x="{x0+i*bw+bw*0.16:.0f}" y="{y0+PH-bh:.0f}" width="{bw*0.68:.0f}" height="{bh:.0f}" fill="{col}"/>')
     s.append(f'<text x="{x0+i*bw+bw/2:.0f}" y="{y0+PH-bh-6:.0f}" {F} font-size="10" font-weight="{"700" if k=="1" else "400"}" fill="{INK if k=="1" else SUB}" text-anchor="middle">{round(100*v/NPAIR)}%</text>')
     s.append(f'<text x="{x0+i*bw+bw/2:.0f}" y="{y0+PH+16}" {F} font-size="9.5" fill="{SUB}" text-anchor="middle">{esc(k)}</text>')
-s.append(f'<text x="{x0+PW/2:.0f}" y="{y0+PH+32}" {F} font-size="10.5" fill="{SUB}" text-anchor="middle">primary studies per trait–NCP relationship (n = {NPAIR})</text>')
+s.append(f'<text x="{x0+PW/2:.0f}" y="{y0+PH+32}" {F} font-size="10.5" fill="{SUB}" text-anchor="middle">primary-study outcomes per trait–NCP relationship (n = {NPAIR})</text>')
 s.append(f'<text x="{x0-42}" y="{y0+PH/2:.0f}" {F} font-size="10.5" fill="{SUB}" text-anchor="middle" transform="rotate(-90 {x0-42} {y0+PH/2:.0f})">% of relationships</text>')
 
-s.append(f'<line x1="44" y1="{H-52}" x2="{W-44}" y2="{H-52}" stroke="#ecebe5"/>')
+#s.append(f'<line x1="44" y1="{H-52}" x2="{W-44}" y2="{H-52}" stroke="#ecebe5"/>')
 #s.append(f'<text x="44" y="{H-30}" {F} font-size="12" font-weight="600" fill="{INK}">The field is expanding fast without consolidating: reviews are low-quality (and no better over time), largely independent,</text>')
 #s.append(f'<text x="44" y="{H-12}" {F} font-size="12" font-weight="600" fill="{INK}">skewed toward leaf traits and regulating services, and — relationship by relationship — very thinly evidenced.</text>')
 s.append('</svg>')
@@ -216,3 +219,1047 @@ except Exception as e:
 
 print("wrote %s%s" % (OUT, png))
 
+# ============================================================================
+# fig1_evidence_base_individual.py
+# Generate the four panels of Fig. 1 as INDIVIDUAL SVG files,
+# then export each SVG to PNG using Inkscape.
+#
+# INPUT:
+#   data/data_model.csv
+#   data/meta-data2.csv
+#   data/study_scores.csv
+#   data/sigma.csv
+#
+# OUTPUT:
+#   outputs/fig1a_quality_year.svg
+#   outputs/fig1a_quality_year.png
+#   outputs/fig1b_redundancy.svg
+#   outputs/fig1b_redundancy.png
+#   outputs/fig1c_coverage.svg
+#   outputs/fig1c_coverage.png
+#   outputs/fig1d_depth.svg
+#   outputs/fig1d_depth.png
+#
+# RUN:
+#   python3 figures/fig1_evidence_base_individual.py
+# ============================================================================
+
+import csv
+import os
+import sys
+import math
+import statistics as st
+import subprocess
+from collections import defaultdict
+
+
+# ============================================================================
+# PATHS
+# ============================================================================
+HERE = os.getcwd()
+ROOT = os.path.dirname(HERE) if os.path.basename(HERE) == "figures" else HERE
+
+D = lambda f: os.path.join(ROOT, "data", f)
+
+DM = D("data_model.csv")
+META = D("meta-data2.csv")
+SS = D("study_scores.csv")
+SIG = D("sigma.csv")
+
+OUTDIR = os.path.join(ROOT, "outputs")
+os.makedirs(OUTDIR, exist_ok=True)
+
+for p in (DM, META, SS, SIG):
+    if not os.path.exists(p):
+        sys.exit("Missing: %s" % p)
+
+
+# ============================================================================
+# INKSCAPE
+# ============================================================================
+
+INKSCAPE = r"C:\Program Files\Inkscape\bin\inkscape.exe"
+
+if not os.path.exists(INKSCAPE):
+    print("WARNING: Inkscape not found at:")
+    print(INKSCAPE)
+    print("SVG files will still be generated.")
+    print()
+
+
+# ============================================================================
+# DATA
+# ============================================================================
+
+dm = list(csv.DictReader(open(DM, encoding="utf-8")))
+
+
+def num(x):
+    try:
+        return float(x)
+    except Exception:
+        return 0.0
+
+
+revs = sorted(set(r["source_id"] for r in dm))
+
+
+# ----------------------------------------------------------------------------
+# Meta-data: first row per review
+# ----------------------------------------------------------------------------
+
+meta = {}
+
+for r in csv.DictReader(
+    open(META, encoding="latin1"),
+    delimiter=";"
+):
+    sid = r["source_id"].strip()
+
+    if sid not in meta:
+        meta[sid] = r
+
+
+# ----------------------------------------------------------------------------
+# Review quality scores
+# ----------------------------------------------------------------------------
+
+ss = {
+    r["source_id"]: float(r["prop_score"])
+    for r in csv.DictReader(open(SS, encoding="utf-8"))
+}
+
+
+# ============================================================================
+# A) QUALITY VS YEAR
+# ============================================================================
+
+qy = []
+
+for s in revs:
+    try:
+        qy.append(
+            (
+                int(float(meta[s]["year"])),
+                ss[s]
+            )
+        )
+    except Exception:
+        pass
+
+
+# ============================================================================
+# B) REDUNDANCY
+# ============================================================================
+
+rows = list(
+    csv.reader(
+        open(SIG, encoding="utf-8")
+    )
+)
+
+mat = [
+    [float(x) for x in r]
+    for r in rows[1:]
+]
+
+nrev = len(rows[0])
+
+nj = [
+    1 / mat[i][i] if mat[i][i] > 0 else 0
+    for i in range(nrev)
+]
+
+shared = [
+    round(mat[i][j] * nj[i] * nj[j])
+    for i in range(nrev)
+    for j in range(i + 1, nrev)
+]
+
+sb = {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3–5": 0,
+    "6+": 0
+}
+
+for x in shared:
+
+    if x == 0:
+        k = "0"
+    elif x == 1:
+        k = "1"
+    elif x == 2:
+        k = "2"
+    elif x <= 5:
+        k = "3–5"
+    else:
+        k = "6+"
+
+    sb[k] += 1
+
+SPAIRS = len(shared)
+
+
+# ============================================================================
+# C) COVERAGE
+# ============================================================================
+
+organs = [
+    "leaf",
+    "whole plant",
+    "root",
+    "stem",
+    "flower",
+    "reproductive",
+    "litter",
+    "life history"
+]
+
+cats = [
+    "regulation",
+    "material",
+    "non-material"
+]
+
+cov = defaultdict(float)
+
+for r in dm:
+    cov[
+        (
+            r["trait_category"],
+            r["ncp_category"]
+        )
+    ] += num(r["ntot"])
+
+
+# ============================================================================
+# D) EVIDENCE DEPTH
+# ============================================================================
+
+ps = defaultdict(float)
+
+for r in dm:
+    ps[r["ts"]] += num(r["ntot"])
+
+
+db = {
+    "1": 0,
+    "2": 0,
+    "3–5": 0,
+    "6–10": 0,
+    ">10": 0
+}
+
+for n in ps.values():
+
+    if n <= 1:
+        k = "1"
+    elif n == 2:
+        k = "2"
+    elif n <= 5:
+        k = "3–5"
+    elif n <= 10:
+        k = "6–10"
+    else:
+        k = ">10"
+
+    db[k] += 1
+
+NPAIR = len(ps)
+
+
+# ============================================================================
+# GRAPHICS SETTINGS
+# ============================================================================
+
+F = (
+    "font-family='system-ui,-apple-system,"
+    "\"Segoe UI\",sans-serif'"
+)
+
+BLUE = "#2a78d6"
+MUTE = "#c8cbd1"
+INK = "#0b0b0b"
+SUB = "#000000" #changed from grey "#52514e" to be black
+ORANGE = "#eb6834"
+
+BACKGROUND = "#ffffff"
+
+W = 1080
+H = 620
+
+
+# ============================================================================
+# HELPERS
+# ============================================================================
+
+def esc(x):
+    return (
+        str(x)
+        .replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+    )
+
+
+def new_svg(title=None):
+
+    s = [
+        f'<svg width="{W}" height="{H}" '
+        f'viewBox="0 0 {W} {H}" '
+        f'xmlns="http://www.w3.org/2000/svg">',
+
+        f'<rect width="{W}" height="{H}" '
+        f'fill="{BACKGROUND}"/>'
+    ]
+
+    if title:
+        s.append(
+            f'<text x="50" y="45" {F} '
+            f'font-size="21" font-weight="800" '
+            f'fill="{INK}">{esc(title)}</text>'
+        )
+
+    return s
+
+
+def close_svg(s):
+    s.append("</svg>")
+
+
+def axes(s, x, y, w, h):
+
+    s.append(
+        f'<line x1="{x}" y1="{y+h}" '
+        f'x2="{x+w}" y2="{y+h}" '
+        f'stroke="#9a9a94" stroke-width="1.2"/>'
+    )
+
+    s.append(
+        f'<line x1="{x}" y1="{y}" '
+        f'x2="{x}" y2="{y+h}" '
+        f'stroke="#9a9a94" stroke-width="1.2"/>'
+    )
+
+
+def write_svg(s, filename):
+
+    path = os.path.join(OUTDIR, filename)
+
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("\n".join(s))
+
+    print("wrote:", path)
+
+    return path
+
+
+def export_png(svg_path):
+    png_path = os.path.splitext(svg_path)[0] + ".png"
+
+    cmd = [
+        INKSCAPE,
+        svg_path,
+        "--export-type=png",
+        "--export-filename=" + png_path,
+        "--export-dpi=300"
+    ]
+
+    print("Exporting:", os.path.basename(svg_path))
+
+    process = subprocess.Popen(
+        cmd,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL
+    )
+
+    returncode = process.wait()
+
+    if returncode != 0:
+        raise RuntimeError(
+            f"Inkscape failed for {svg_path} "
+            f"(return code {returncode})"
+        )
+
+    print("wrote:", png_path)
+
+
+# ============================================================================
+# A — QUALITY VS YEAR
+# ============================================================================
+
+def make_quality():
+
+    s = new_svg()
+
+    x0 = 110
+    y0 = 90
+    PW = 850
+    PH = 420
+
+    s.append(
+        f'<text x="{x0}" y="{y0-25}" {F} '
+        f'font-size="34" font-weight="700" '
+        f'fill="{INK}">'
+        f'Booming, but not getting more rigorous'
+        f'</text>'
+    )
+
+    axes(s, x0, y0, PW, PH)
+
+    # ------------------------------------------------------------------------
+    # axes
+    # ------------------------------------------------------------------------
+
+    ax = lambda v: x0 + PW * (v - 2017) / 7
+
+    ay = lambda v: y0 + PH * (
+        1 - v / 0.8
+    )
+
+    for g in (0, .2, .4, .6, .8):
+
+        s.append(
+            f'<line x1="{x0}" y1="{ay(g):.0f}" '
+            f'x2="{x0+PW}" y2="{ay(g):.0f}" '
+            f'stroke="#f0efe9"/>'
+        )
+
+        s.append(
+            f'<text x="{x0-10}" y="{ay(g)+4:.0f}" '
+            f'{F} font-size="24" fill="{SUB}" '
+            f'text-anchor="end">{g:.1f}</text>'
+        )
+
+    for yr in range(2017, 2025):
+
+        s.append(
+            f'<text x="{ax(yr):.0f}" '
+            f'y="{y0+PH+25}" {F} '
+            f'font-size="24" fill="{SUB}" '
+            f'text-anchor="middle">{yr}</text>'
+        )
+
+    # ------------------------------------------------------------------------
+    # OLS
+    # ------------------------------------------------------------------------
+
+    yrs = [a for a, b in qy]
+    vals = [b for a, b in qy]
+
+    mx = st.mean(yrs)
+    my = st.mean(vals)
+
+    nn = len(qy)
+
+    sxx = sum(
+        (a - mx) ** 2
+        for a in yrs
+    )
+
+    b1 = sum(
+        (a - mx) * (b - my)
+        for a, b in qy
+    ) / sxx
+
+    b0 = my - b1 * mx
+
+    sse = sum(
+        (
+            b -
+            (b0 + b1 * a)
+        ) ** 2
+        for a, b in qy
+    )
+
+    s2 = sse / (nn - 2)
+
+    tc = 2.086
+
+    top = []
+    bot = []
+
+    for gx in [
+        2017 + .25 * k
+        for k in range(29)
+    ]:
+
+        fit = b0 + b1 * gx
+
+        sef = math.sqrt(
+            s2 *
+            (
+                1 / nn +
+                (gx - mx) ** 2 / sxx
+            )
+        )
+
+        top.append(
+            (
+                gx,
+                fit + tc * sef
+            )
+        )
+
+        bot.append(
+            (
+                gx,
+                fit - tc * sef
+            )
+        )
+
+    poly = " ".join(
+        f"{ax(gx):.1f},"
+        f"{ay(min(.8, max(0, v))):.1f}"
+        for gx, v in top
+    )
+
+    poly += " " + " ".join(
+        f"{ax(gx):.1f},"
+        f"{ay(min(.8, max(0, v))):.1f}"
+        for gx, v in reversed(bot)
+    )
+
+    s.append(
+        f'<polygon points="{poly}" '
+        f'fill="{ORANGE}" '
+        f'fill-opacity="0.10"/>'
+    )
+
+    s.append(
+        f'<line '
+        f'x1="{ax(2017):.0f}" '
+        f'y1="{ay(b0+b1*2017):.0f}" '
+        f'x2="{ax(2024):.0f}" '
+        f'y2="{ay(b0+b1*2024):.0f}" '
+        f'stroke="{ORANGE}" '
+        f'stroke-width="4"/>'
+    )
+
+    # ------------------------------------------------------------------------
+    # points
+    # ------------------------------------------------------------------------
+
+    for a, b in qy:
+
+        s.append(
+            f'<circle '
+            f'cx="{ax(a):.0f}" '
+            f'cy="{ay(b):.0f}" '
+            f'r="8" fill="none" '
+            f'stroke="{BLUE}" '
+            f'stroke-width="1.7"/>'
+        )
+
+    # ------------------------------------------------------------------------
+    # statistics
+    # ------------------------------------------------------------------------
+
+    ci_lo = (
+        b1 -
+        tc * math.sqrt(s2 / sxx)
+    )
+
+    ci_hi = (
+        b1 +
+        tc * math.sqrt(s2 / sxx)
+    )
+
+    s.append(
+        f'<text x="{x0+PW}" '
+        f'y="{y0+25}" {F} '
+        f'font-size="26" '
+        f'fill="{SUB}" '
+        f'text-anchor="end">'
+        f'β = {b1:.3f} yr⁻¹ '
+        f'(95% CI {ci_lo:.3f}, {ci_hi:.3f}); '
+        f'n = {nn}'
+        f'</text>'
+    )
+
+    s.append(
+        f'<text x="{x0-55}" '
+        f'y="{y0+PH/2:.0f}" {F} '
+        f'font-size="26" fill="{SUB}" '
+        f'text-anchor="middle" '
+        f'transform="rotate(-90 '
+        f'{x0-55} {y0+PH/2:.0f})">'
+        f'review methodological quality score'
+        f'</text>'
+    )
+
+    s.append(
+        f'<text x="{x0+PW/2}" '
+        f'y="{y0+PH+55}" {F} '
+        f'font-size="26" fill="{SUB}" '
+        f'text-anchor="middle">'
+        f'publication year'
+        f'</text>'
+    )
+
+    close_svg(s)
+
+    return write_svg(
+        s,
+        "fig1a_quality_year.svg"
+    )
+
+
+# ============================================================================
+# B — REDUNDANCY
+# ============================================================================
+
+def make_redundancy():
+
+    s = new_svg()
+
+    x0 = 110
+    y0 = 90
+    PW = 850
+    PH = 420
+
+    s.append(
+        f'<text x="{x0}" y="{y0-25}" {F} '
+        f'font-size="18" font-weight="700" '
+        f'fill="{INK}">'
+        f'b  Reviews are largely independent'
+        f'</text>'
+    )
+
+    axes(s, x0, y0, PW, PH)
+
+    order = [
+        "0",
+        "1",
+        "2",
+        "3–5",
+        "6+"
+    ]
+
+    mxs = max(sb.values())
+
+    bw = PW / len(order)
+
+    for i, k in enumerate(order):
+
+        v = sb[k]
+
+        bh = (
+            0.9 *
+            PH *
+            v /
+            mxs
+        )
+
+        col = (
+            BLUE
+            if k == "0"
+            else MUTE
+        )
+
+        x = (
+            x0 +
+            i * bw +
+            bw * 0.16
+        )
+
+        y = (
+            y0 +
+            PH -
+            bh
+        )
+
+        s.append(
+            f'<rect '
+            f'x="{x:.0f}" '
+            f'y="{y:.0f}" '
+            f'width="{bw*0.68:.0f}" '
+            f'height="{bh:.0f}" '
+            f'fill="{col}"/>'
+        )
+
+        s.append(
+            f'<text '
+            f'x="{x0+i*bw+bw/2:.0f}" '
+            f'y="{y-10:.0f}" '
+            f'{F} font-size="12" '
+            f'font-weight="'
+            f'{"700" if k=="0" else "400"}" '
+            f'fill="{INK if k=="0" else SUB}" '
+            f'text-anchor="middle">'
+            f'{round(100*v/SPAIRS)}%'
+            f'</text>'
+        )
+
+        s.append(
+            f'<text '
+            f'x="{x0+i*bw+bw/2:.0f}" '
+            f'y="{y0+PH+28}" '
+            f'{F} font-size="12" '
+            f'fill="{SUB}" '
+            f'text-anchor="middle">'
+            f'{esc(k)}'
+            f'</text>'
+        )
+
+    s.append(
+        f'<text x="{x0+PW/2:.0f}" '
+        f'y="{y0+PH+60}" {F} '
+        f'font-size="12" fill="{SUB}" '
+        f'text-anchor="middle">'
+        f'primary studies shared between a pair of reviews '
+        f'(n = {SPAIRS} pairs)'
+        f'</text>'
+    )
+
+    s.append(
+        f'<text x="{x0-55}" '
+        f'y="{y0+PH/2:.0f}" {F} '
+        f'font-size="12" fill="{SUB}" '
+        f'text-anchor="middle" '
+        f'transform="rotate(-90 '
+        f'{x0-55} {y0+PH/2:.0f})">'
+        f'% of review pairs'
+        f'</text>'
+    )
+
+    close_svg(s)
+
+    return write_svg(
+        s,
+        "fig1b_redundancy.svg"
+    )
+
+
+# ============================================================================
+# C — COVERAGE
+# ============================================================================
+
+def make_coverage():
+
+    s = new_svg()
+
+    x0 = 110
+    y0 = 115
+    PW = 850
+    PH = 390
+
+    s.append(
+        f'<text x="{x0}" y="{y0-45}" {F} '
+        f'font-size="18" font-weight="700" '
+        f'fill="{INK}">'
+        f'c  Evidence concentrated on leaf × regulating'
+        f'</text>'
+    )
+
+    olab = {
+        "leaf": "Leaf",
+        "whole plant": "Whole-plant",
+        "root": "Root",
+        "stem": "Stem",
+        "flower": "Flower",
+        "reproductive": "Reprod.",
+        "litter": "Litter",
+        "life history": "Life hist."
+    }
+
+    clab = {
+        "regulation": "Regulating",
+        "material": "Material",
+        "non-material": "Non-mat."
+    }
+
+    maxv = max(cov.values())
+
+    label_width = 160
+
+    cw = (
+        PW -
+        label_width
+    ) / len(cats)
+
+    ch = PH / len(organs)
+
+    gx0 = x0 + label_width
+
+    for j, cat in enumerate(cats):
+
+        s.append(
+            f'<text '
+            f'x="{gx0+j*cw+cw/2:.0f}" '
+            f'y="{y0-15}" {F} '
+            f'font-size="12" fill="{SUB}" '
+            f'text-anchor="middle">'
+            f'{clab[cat]}'
+            f'</text>'
+        )
+
+    for i, o in enumerate(organs):
+
+        s.append(
+            f'<text '
+            f'x="{gx0-12}" '
+            f'y="{y0+i*ch+ch/2+4:.0f}" '
+            f'{F} font-size="12" '
+            f'fill="{INK}" '
+            f'text-anchor="end">'
+            f'{olab[o]}'
+            f'</text>'
+        )
+
+        for j, cat in enumerate(cats):
+
+            v = cov.get(
+                (o, cat),
+                0
+            )
+
+            t = (
+                math.log1p(v) /
+                math.log1p(maxv)
+                if maxv
+                else 0
+            )
+
+            if v > 0:
+
+                col = (
+                    "#%02x%02x%02x" %
+                    (
+                        int(
+                            255 -
+                            (255-42) * t
+                        ),
+                        int(
+                            255 -
+                            (255-120) * t
+                        ),
+                        int(
+                            255 -
+                            (255-214) * t
+                        )
+                    )
+                )
+
+            else:
+
+                col = "#f6f5f0"
+
+            cx = (
+                gx0 +
+                j * cw
+            )
+
+            cy = (
+                y0 +
+                i * ch
+            )
+
+            s.append(
+                f'<rect '
+                f'x="{cx:.0f}" '
+                f'y="{cy:.0f}" '
+                f'width="{cw-3:.0f}" '
+                f'height="{ch-3:.0f}" '
+                f'fill="{col}" '
+                f'stroke="#ffffff" '
+                f'stroke-width="1"/>'
+            )
+
+            if v > 0:
+
+                txtcol = (
+                    "#ffffff"
+                    if t > 0.5
+                    else SUB
+                )
+
+                s.append(
+                    f'<text '
+                    f'x="{cx+cw/2:.0f}" '
+                    f'y="{cy+ch/2+4:.0f}" '
+                    f'{F} font-size="11" '
+                    f'fill="{txtcol}" '
+                    f'text-anchor="middle">'
+                    f'{int(v)}'
+                    f'</text>'
+                )
+
+    s.append(
+        f'<text '
+        f'x="{gx0+(PW-label_width)/2:.0f}" '
+        f'y="{y0+PH+35}" {F} '
+        f'font-size="12" fill="{SUB}" '
+        f'text-anchor="middle">'
+        f'number of primary studies'
+        f'</text>'
+    )
+
+    close_svg(s)
+
+    return write_svg(
+        s,
+        "fig1c_coverage.svg"
+    )
+
+
+# ============================================================================
+# D — DEPTH
+# ============================================================================
+
+def make_depth():
+
+    s = new_svg()
+
+    x0 = 110
+    y0 = 90
+    PW = 850
+    PH = 420
+
+    s.append(
+        f'<text x="{x0}" y="{y0-25}" {F} '
+        f'font-size="34" font-weight="700" '
+        f'fill="{INK}">'
+        f'Most relationships rest on a single study'
+        f'</text>'
+    )
+
+    axes(s, x0, y0, PW, PH)
+
+    order = [
+        "1",
+        "2",
+        "3–5",
+        "6–10",
+        ">10"
+    ]
+
+    mx2 = max(db.values())
+
+    bw = PW / len(order)
+
+    for i, k in enumerate(order):
+
+        v = db[k]
+
+        bh = (
+            0.9 *
+            PH *
+            v /
+            mx2
+        )
+
+        col = (
+            BLUE
+            if k == "1"
+            else MUTE
+        )
+
+        x = (
+            x0 +
+            i * bw +
+            bw * 0.16
+        )
+
+        y = (
+            y0 +
+            PH -
+            bh
+        )
+
+        s.append(
+            f'<rect '
+            f'x="{x:.0f}" '
+            f'y="{y:.0f}" '
+            f'width="{bw*0.68:.0f}" '
+            f'height="{bh:.0f}" '
+            f'fill="{col}"/>'
+        )
+
+        s.append(
+            f'<text '
+            f'x="{x0+i*bw+bw/2:.0f}" '
+            f'y="{y-10:.0f}" '
+            f'{F} font-size="26" '
+            f'font-weight="'
+            f'{"700" if k=="1" else "400"}" '
+            f'fill="{INK if k=="1" else SUB}" '
+            f'text-anchor="middle">'
+            f'{round(100*v/NPAIR)}%'
+            f'</text>'
+        )
+
+        s.append(
+            f'<text '
+            f'x="{x0+i*bw+bw/2:.0f}" '
+            f'y="{y0+PH+28}" '
+            f'{F} font-size="26" '
+            f'fill="{SUB}" '
+            f'text-anchor="middle">'
+            f'{esc(k)}'
+            f'</text>'
+        )
+
+    s.append(
+        f'<text x="{x0+PW/2:.0f}" '
+        f'y="{y0+PH+60}" {F} '
+        f'font-size="26" fill="{SUB}" '
+        f'text-anchor="middle">'
+        f'primary studies per trait–NCP relationship '
+        f'(n = {NPAIR})'
+        f'</text>'
+    )
+
+    s.append(
+        f'<text x="{x0-55}" '
+        f'y="{y0+PH/2:.0f}" {F} '
+        f'font-size="26" fill="{SUB}" '
+        f'text-anchor="middle" '
+        f'transform="rotate(-90 '
+        f'{x0-55} {y0+PH/2:.0f})">'
+        f'% of relationships'
+        f'</text>'
+    )
+
+    close_svg(s)
+
+    return write_svg(
+        s,
+        "fig1d_depth.svg"
+    )
+
+
+# ============================================================================
+# RUN
+# ============================================================================
+if __name__ == "__main__":
+    print()
+    print("=" * 70)
+    print("Generating individual figures")
+    print("=" * 70)
+    print()
+
+    files = [
+        make_quality(),
+        make_redundancy(),
+        make_coverage(),
+        make_depth()
+    ]
+
+    print()
+    print("=" * 70)
+    print("Exporting PNG files with Inkscape")
+    print("=" * 70)
+    print()
+
+    for svg in files:
+        export_png(svg)
+
+    print()
+    print("=" * 70)
+    print("DONE")
+    print("=" * 70)
+    
+    

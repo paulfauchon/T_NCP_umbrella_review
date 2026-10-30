@@ -2,7 +2,7 @@
 #  fig_main_tradeoff.R  —  Main figure: "Same trait, opposite contributions"
 #                          (R / ggplot2 version — same figure as the .py)
 #
-#  Trait x NCP posterior effect-direction matrix from the PAIR-LEVEL (simple)
+#  Trait x NCP posterior effect-direction matrix from the PAIR-LEVEL (simple_qp)
 #  model (no cross-NCP borrowing) — the correct parameterisation for reading
 #  per-pair directions. Fill = continuous P(effect > 0) on a diverging RdBu
 #  ramp; cell number = primary studies. Two conventional reading aids overlaid

@@ -48,8 +48,8 @@ MCMC <- list(
 #  PRIMARY model for the paper = "qp"  (full structure, quality as precision).
 MODEL_SPECS <- tribble(
   ~name,     ~label,                              ~trait_structure, ~quality_mode,
-  "simple",  "Pair only",                          0L,               0L,
-  "ncp",     "NCP only + quality-weight",          1L,               1L,
+  "simple",  "Pair only",                          0L,               2L,#modification du modèle simple mais avec quality_mode=2 pour le script check_reversals.R
+  "ncp",     "NCP only + quality-weight",          1L,               2L,#quality mode modifié pour 2, pour comparer NCP-only avec des modeles comparables
   "full",    "Trait+NCP + quality-weight",         2L,               1L,
   "nq",      "Trait+NCP, no quality",              2L,               0L,
   "qp",      "Trait+NCP, quality-precision (PRIMARY)", 2L,           2L,
